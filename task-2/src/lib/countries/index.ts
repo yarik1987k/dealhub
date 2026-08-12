@@ -1,24 +1,30 @@
 /**
- * The app's single entry point for country data.
+ * The app's single entry point for country data, backed by REST Countries v5.
  *
- * Provider choice is decided here, once: REST Countries when
- * RESTCOUNTRIES_API_KEY is set, the bundled snapshot otherwise. If a live call
- * fails we degrade to the snapshot rather than showing an empty widget - the
- * `source` field on every result says which one answered.
+ * An API key is required; without one the data layer refuses to answer rather
+ * than inventing data, and the route handlers turn that into a 503 the UI can
+ * explain.
  */
 
 import { fetchAllCountries, fetchCountryByCode, getApiKey } from "./restcountries";
-import { snapshotCountries, snapshotCountryByCode } from "./snapshot";
-import type { CountriesSource, CountryDetail, CountrySummary } from "./types";
+import type { CountryDetail, CountrySummary } from "./types";
 
 const CACHE_TTL_MS = 60 * 60 * 1000;
 
-type CachedList = {
-  source: CountriesSource;
-  countries: CountryDetail[];
-};
+export class MissingApiKeyError extends Error {
+  constructor() {
+    super("RESTCOUNTRIES_API_KEY is not configured.");
+    this.name = "MissingApiKeyError";
+  }
+}
 
-let cache: { expiresAt: number; value: Promise<CachedList> } | null = null;
+let cache: { expiresAt: number; value: Promise<CountryDetail[]> } | null = null;
+
+function requireApiKey(): string {
+  const key = getApiKey();
+  if (!key) throw new MissingApiKeyError();
+  return key;
+}
 
 function toSummary(country: CountryDetail): CountrySummary {
   return {
@@ -29,28 +35,13 @@ function toSummary(country: CountryDetail): CountrySummary {
   };
 }
 
-function snapshotList(): CachedList {
-  return { source: "snapshot", countries: snapshotCountries() };
-}
-
-async function loadCountries(): Promise<CachedList> {
-  const key = getApiKey();
-  if (!key) return snapshotList();
-
-  try {
-    return { source: "restcountries", countries: await fetchAllCountries(key) };
-  } catch (error) {
-    console.warn("[countries] REST Countries unavailable, serving bundled snapshot:", error);
-    return snapshotList();
-  }
-}
-
 /** Full list, memoised per server process for an hour. */
-export function getCountries(): Promise<CachedList> {
+export function getCountries(): Promise<CountryDetail[]> {
+  const key = requireApiKey();
   const now = Date.now();
 
   if (!cache || cache.expiresAt <= now) {
-    const value = loadCountries().catch((error) => {
+    const value = fetchAllCountries(key).catch((error: unknown) => {
       cache = null; // never cache a rejection
       throw error;
     });
@@ -60,44 +51,18 @@ export function getCountries(): Promise<CachedList> {
   return cache.value;
 }
 
-export async function getCountrySummaries(): Promise<{
-  source: CountriesSource;
-  countries: CountrySummary[];
-}> {
-  const { source, countries } = await getCountries();
-  return { source, countries: countries.map(toSummary) };
+/** Just what the dropdown renders. */
+export async function getCountrySummaries(): Promise<CountrySummary[]> {
+  return (await getCountries()).map(toSummary);
 }
 
-/**
- * Single country by ISO alpha-3. With a key this hits the dedicated lookup
- * endpoint; on failure - and with no key - it resolves from the cached list.
- */
-export async function getCountry(code: string): Promise<{
-  source: CountriesSource;
-  country: CountryDetail;
-} | null> {
+/** Single country by ISO alpha-3. `null` means no such country. */
+export async function getCountry(code: string): Promise<CountryDetail | null> {
   const normalized = code.trim().toUpperCase();
-
   if (!/^[A-Z]{3}$/.test(normalized)) return null;
 
-  const key = getApiKey();
-
-  if (key) {
-    try {
-      const country = await fetchCountryByCode(key, normalized);
-      return country ? { source: "restcountries", country } : null;
-    } catch (error) {
-      console.warn(`[countries] lookup for ${normalized} failed, falling back:`, error);
-    }
-  }
-
-  const { source, countries } = await getCountries();
-  const fromList = countries.find((country) => country.code === normalized);
-  if (fromList) return { source, country: fromList };
-
-  const fromSnapshot = snapshotCountryByCode(normalized);
-  return fromSnapshot ? { source: "snapshot", country: fromSnapshot } : null;
+  return fetchCountryByCode(requireApiKey(), normalized);
 }
 
 export { getApiKey };
-export type { CountriesSource, CountryDetail, CountrySummary };
+export type { CountryDetail, CountrySummary };

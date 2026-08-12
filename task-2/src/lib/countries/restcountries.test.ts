@@ -16,7 +16,7 @@ const CANADA = {
   subregion: "North America",
   population: 38_005_238,
   timezones: ["UTC-08:00", "UTC-07:00", "UTC-06:00", "UTC-05:00", "UTC-04:00", "UTC-03:30"],
-  currencies: { CAD: { name: "Canadian dollar", symbol: "$" } },
+  currencies: [{ code: "CAD", name: "Canadian dollar", symbol: "$" }],
   flag: { emoji: "🇨🇦" },
 };
 
@@ -138,12 +138,43 @@ describe("fetchAllCountries", () => {
     expect(country.capital).toEqual(["Ottawa"]);
   });
 
-  it("falls back to the currency code when the name is missing", async () => {
-    mockFetch({ body: envelope([{ ...CANADA, currencies: { CAD: {} } }]) });
+  it("reads currencies from the array v5 actually returns", async () => {
+    mockFetch({
+      body: envelope([
+        {
+          ...CANADA,
+          currencies: [
+            { code: "BTN", name: "Bhutanese ngultrum", symbol: "Nu." },
+            { code: "INR", name: "Indian rupee", symbol: "₹" },
+          ],
+        },
+      ]),
+    });
+
+    const [country] = await fetchAllCountries(KEY);
+
+    expect(country.currencies).toEqual([
+      { code: "BTN", name: "Bhutanese ngultrum", symbol: "Nu." },
+      { code: "INR", name: "Indian rupee", symbol: "₹" },
+    ]);
+  });
+
+  it("tolerates a currency with no symbol", async () => {
+    mockFetch({ body: envelope([{ ...CANADA, currencies: [{ code: "CAD" }] }]) });
 
     const [country] = await fetchAllCountries(KEY);
 
     expect(country.currencies).toEqual([{ code: "CAD", name: "CAD", symbol: null }]);
+  });
+
+  it("still accepts the legacy object-keyed currency shape", async () => {
+    mockFetch({
+      body: envelope([{ ...CANADA, currencies: { CAD: { name: "Canadian dollar", symbol: "$" } } }]),
+    });
+
+    const [country] = await fetchAllCountries(KEY);
+
+    expect(country.currencies).toEqual([{ code: "CAD", name: "Canadian dollar", symbol: "$" }]);
   });
 
   it("walks every page until the upstream reports no more", async () => {

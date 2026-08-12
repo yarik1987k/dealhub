@@ -65,7 +65,7 @@ describe("CountryWidget", () => {
   });
 
   it("loads and renders detail for the selected country", async () => {
-    vi.stubGlobal("fetch", vi.fn(async () => jsonResponse({ source: "snapshot", country: CANADA })));
+    vi.stubGlobal("fetch", vi.fn(async () => jsonResponse({ country: CANADA })));
     const user = userEvent.setup();
 
     render(<CountryWidget initialCountries={SUMMARIES} />);
@@ -81,7 +81,7 @@ describe("CountryWidget", () => {
 
   it("requests the detail route for the chosen code", async () => {
     const fetchMock = vi.fn(async (_url: string, _init?: RequestInit) =>
-      jsonResponse({ source: "snapshot", country: CANADA }),
+      jsonResponse({ country: CANADA }),
     );
     vi.stubGlobal("fetch", fetchMock);
     const user = userEvent.setup();
@@ -137,7 +137,7 @@ describe("CountryWidget", () => {
           reject(new DOMException("aborted", "AbortError")),
         );
         setTimeout(
-          () => resolve(jsonResponse({ source: "snapshot", country: slow ? CANADA : BRAZIL })),
+          () => resolve(jsonResponse({ country: slow ? CANADA : BRAZIL })),
           slow ? 50 : 5,
         );
       });
@@ -162,7 +162,7 @@ describe("CountryWidget", () => {
 
   it("recovers the list from the API when the server render came back empty", async () => {
     const fetchMock = vi.fn(async () =>
-      jsonResponse({ source: "snapshot", count: SUMMARIES.length, countries: SUMMARIES }),
+      jsonResponse({ count: SUMMARIES.length, countries: SUMMARIES }),
     );
     vi.stubGlobal("fetch", fetchMock);
     const user = userEvent.setup();

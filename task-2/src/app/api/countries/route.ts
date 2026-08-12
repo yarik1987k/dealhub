@@ -7,14 +7,14 @@
  */
 
 import type { NextRequest } from "next/server";
-import { getCountrySummaries } from "@/lib/countries";
+import { getCountrySummaries, MissingApiKeyError } from "@/lib/countries";
 import { failure, success } from "@/lib/api-response";
 
 export async function GET(request: NextRequest) {
   const query = request.nextUrl.searchParams.get("q")?.trim().toLowerCase() ?? "";
 
   try {
-    const { source, countries } = await getCountrySummaries();
+    const countries = await getCountrySummaries();
 
     const filtered = query
       ? countries.filter(
@@ -24,8 +24,17 @@ export async function GET(request: NextRequest) {
         )
       : countries;
 
-    return success({ source, count: filtered.length, countries: filtered });
+    return success({ count: filtered.length, countries: filtered });
   } catch (error) {
+    if (error instanceof MissingApiKeyError) {
+      console.error("[api/countries] RESTCOUNTRIES_API_KEY is not configured");
+      return failure(
+        "api_key_missing",
+        "This server has no REST Countries API key configured. Set RESTCOUNTRIES_API_KEY.",
+        503,
+      );
+    }
+
     console.error("[api/countries] failed to load countries:", error);
     return failure("countries_unavailable", "Could not load the country list.", 502);
   }

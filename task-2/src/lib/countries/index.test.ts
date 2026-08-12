@@ -17,7 +17,7 @@ const CANADA = {
   subregion: "North America",
   population: 38_005_238,
   timezones: ["UTC-05:00"],
-  currencies: { CAD: { name: "Canadian dollar", symbol: "$" } },
+  currencies: [{ code: "CAD", name: "Canadian dollar", symbol: "$" }],
   flag: { emoji: "🇨🇦" },
 };
 
@@ -34,8 +34,6 @@ function envelope(objects: unknown[]) {
 
 beforeEach(() => {
   vi.stubEnv("RESTCOUNTRIES_BASE_URL", "https://api.test/v5");
-  // Fallbacks are expected in several tests; keep the output readable.
-  vi.spyOn(console, "warn").mockImplementation(() => {});
 });
 
 afterEach(() => {
@@ -48,46 +46,26 @@ describe("without an API key", () => {
     vi.stubEnv("RESTCOUNTRIES_API_KEY", "");
   });
 
-  it("serves the bundled snapshot and makes no upstream request", async () => {
+  it("refuses the list rather than serving invented data", async () => {
     const fetchMock = vi.fn();
     vi.stubGlobal("fetch", fetchMock);
 
-    const { getCountrySummaries } = await loadModule();
-    const { source, countries } = await getCountrySummaries();
+    const { getCountrySummaries, MissingApiKeyError } = await loadModule();
 
-    expect(source).toBe("snapshot");
-    expect(countries.length).toBeGreaterThan(200);
+    await expect(getCountrySummaries()).rejects.toBeInstanceOf(MissingApiKeyError);
     expect(fetchMock).not.toHaveBeenCalled();
   });
 
-  it("returns summaries trimmed to what the dropdown needs", async () => {
-    const { getCountrySummaries } = await loadModule();
-    const { countries } = await getCountrySummaries();
+  it("refuses a detail lookup too", async () => {
+    const { getCountry, MissingApiKeyError } = await loadModule();
 
-    const canada = countries.find((country) => country.code === "CAN");
-    expect(canada).toEqual({ code: "CAN", alpha2: "CA", name: "Canada", flag: "🇨🇦" });
+    await expect(getCountry("CAN")).rejects.toBeInstanceOf(MissingApiKeyError);
   });
 
-  it("resolves a single country from the snapshot", async () => {
-    const { getCountry } = await loadModule();
-    const result = await getCountry("can");
-
-    expect(result?.source).toBe("snapshot");
-    expect(result?.country.capital).toEqual(["Ottawa"]);
-  });
-
-  it("rejects a malformed code without touching the data layer", async () => {
+  it("still rejects a malformed code before asking for a key", async () => {
     const { getCountry } = await loadModule();
 
     await expect(getCountry("CANADA")).resolves.toBeNull();
-    await expect(getCountry("12")).resolves.toBeNull();
-    await expect(getCountry("")).resolves.toBeNull();
-  });
-
-  it("returns null for a well-formed but unknown code", async () => {
-    const { getCountry } = await loadModule();
-
-    await expect(getCountry("ZZZ")).resolves.toBeNull();
   });
 });
 
@@ -96,14 +74,13 @@ describe("with an API key", () => {
     vi.stubEnv("RESTCOUNTRIES_API_KEY", "test-key");
   });
 
-  it("serves live data and marks the source", async () => {
+  it("returns summaries trimmed to what the dropdown needs", async () => {
     vi.stubGlobal("fetch", vi.fn(async () => jsonResponse(envelope([CANADA]))));
 
     const { getCountrySummaries } = await loadModule();
-    const { source, countries } = await getCountrySummaries();
+    const countries = await getCountrySummaries();
 
-    expect(source).toBe("restcountries");
-    expect(countries).toHaveLength(1);
+    expect(countries).toEqual([{ code: "CAN", alpha2: "CA", name: "Canada", flag: "🇨🇦" }]);
   });
 
   it("fetches the list once and serves later callers from cache", async () => {
@@ -117,7 +94,24 @@ describe("with an API key", () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
   });
 
-  it("degrades to the snapshot when the upstream is unreachable", async () => {
+  it("does not cache a failure - the next caller retries", async () => {
+    let attempt = 0;
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => {
+        attempt += 1;
+        if (attempt === 1) return jsonResponse({ errors: [{ message: "upstream down" }] });
+        return jsonResponse(envelope([CANADA]));
+      }),
+    );
+
+    const { getCountrySummaries } = await loadModule();
+
+    await expect(getCountrySummaries()).rejects.toThrow(/upstream down/);
+    await expect(getCountrySummaries()).resolves.toHaveLength(1);
+  });
+
+  it("propagates an upstream outage instead of hiding it", async () => {
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => {
@@ -126,23 +120,23 @@ describe("with an API key", () => {
     );
 
     const { getCountrySummaries } = await loadModule();
-    const { source, countries } = await getCountrySummaries();
 
-    expect(source).toBe("snapshot");
-    expect(countries.length).toBeGreaterThan(200);
+    await expect(getCountrySummaries()).rejects.toThrow(/Could not reach/);
   });
 
-  it("degrades to the snapshot when the key is rejected", async () => {
+  it("propagates a rejected key", async () => {
     vi.stubGlobal(
       "fetch",
       vi.fn(async () =>
-        jsonResponse({ errors: [{ code: "authKeyMissing", message: "Authorization key required." }] }),
+        jsonResponse({
+          errors: [{ code: "authKeyMissing", message: "Authorization key required." }],
+        }),
       ),
     );
 
     const { getCountrySummaries } = await loadModule();
 
-    expect((await getCountrySummaries()).source).toBe("snapshot");
+    await expect(getCountrySummaries()).rejects.toThrow(/Authorization key required/);
   });
 
   it("uses the single-country endpoint for a detail lookup", async () => {
@@ -152,9 +146,9 @@ describe("with an API key", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     const { getCountry } = await loadModule();
-    const result = await getCountry("CAN");
+    const country = await getCountry("can");
 
-    expect(result?.source).toBe("restcountries");
+    expect(country?.name).toBe("Canada");
     expect(fetchMock).toHaveBeenCalledTimes(1);
     expect(fetchMock.mock.calls[0][0]).toBe("https://api.test/v5/codes.alpha_3/CAN");
   });
@@ -167,18 +161,15 @@ describe("with an API key", () => {
     await expect(getCountry("ZZZ")).resolves.toBeNull();
   });
 
-  it("falls back to snapshot data when the detail lookup errors", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn(async () => {
-        throw new Error("ECONNREFUSED");
-      }),
-    );
+  it("rejects a malformed code without touching the network", async () => {
+    const fetchMock = vi.fn();
+    vi.stubGlobal("fetch", fetchMock);
 
     const { getCountry } = await loadModule();
-    const result = await getCountry("CAN");
 
-    expect(result?.source).toBe("snapshot");
-    expect(result?.country.name).toBe("Canada");
+    await expect(getCountry("CANADA")).resolves.toBeNull();
+    await expect(getCountry("12")).resolves.toBeNull();
+    await expect(getCountry("")).resolves.toBeNull();
+    expect(fetchMock).not.toHaveBeenCalled();
   });
 });

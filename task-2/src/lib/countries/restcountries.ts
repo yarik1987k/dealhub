@@ -41,7 +41,13 @@ type RawCountry = {
   subregion?: string;
   population?: number;
   timezones?: string[];
-  currencies?: Record<string, { name?: string; symbol?: string }>;
+  /**
+   * v5 returns an array of `{ code, name, symbol }`. Older versions keyed an
+   * object by currency code, and both are accepted here.
+   */
+  currencies?:
+    | Array<{ code?: string; name?: string; symbol?: string }>
+    | Record<string, { name?: string; symbol?: string }>;
   flag?: { emoji?: string };
 };
 
@@ -80,6 +86,17 @@ function nativeName(names: RawCountry["names"]): string | null {
 
 function currencyList(currencies: RawCountry["currencies"]): Currency[] {
   if (!currencies) return [];
+
+  if (Array.isArray(currencies)) {
+    return currencies
+      .filter((currency) => currency?.code || currency?.name)
+      .map((currency) => ({
+        code: currency.code ?? "",
+        name: currency.name ?? currency.code ?? "",
+        symbol: currency.symbol ?? null,
+      }));
+  }
+
   return Object.entries(currencies).map(([code, value]) => ({
     code,
     name: value?.name ?? code,

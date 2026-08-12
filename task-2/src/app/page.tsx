@@ -8,9 +8,10 @@ export const revalidate = 3600;
 export default async function Home() {
   let countries: CountrySummary[] = [];
 
-  // A failure here is not fatal: the widget retries through /api/countries.
+  // A failure here is not fatal: the widget retries through /api/countries and
+  // surfaces whatever the route reports - a missing key, or an upstream outage.
   try {
-    countries = (await getCountrySummaries()).countries;
+    countries = await getCountrySummaries();
   } catch (error) {
     console.error("[page] could not preload countries:", error);
   }

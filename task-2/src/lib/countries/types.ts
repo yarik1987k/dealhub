@@ -29,16 +29,12 @@ export type CountryDetail = CountrySummary & {
   currencies: Currency[];
 };
 
-export type CountriesSource = "restcountries" | "snapshot";
-
 export type ListResponse = {
-  source: CountriesSource;
   count: number;
   countries: CountrySummary[];
 };
 
 export type DetailResponse = {
-  source: CountriesSource;
   country: CountryDetail;
 };
 

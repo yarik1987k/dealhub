@@ -7,7 +7,7 @@ from a searchable dropdown and see its capital, region, currencies, population a
 
 ```bash
 npm install
-cp .env.example .env.local   # optional - see "API key" below
+cp .env.example .env.local   # then add your key - see below
 npm run dev                  # http://localhost:3000
 ```
 
@@ -26,11 +26,8 @@ RESTCOUNTRIES_API_KEY=your-key-here
 The key is read server-side only and is sent upstream as `Authorization: Bearer <key>`. It never
 reaches the browser: the client only ever talks to this app's own `/api/countries` routes.
 
-**Without a key the app still works.** It falls back to a dataset bundled at
-`src/data/countries-snapshot.json`. The same fallback kicks in if REST Countries is unreachable, so
-an upstream outage degrades the widget instead of breaking it. Every API response carries a
-`source` field (`"restcountries"` or `"snapshot"`) saying which provider answered, so you can tell
-the two apart without reading the logs.
+The key is required. With none configured the API routes answer `503 api_key_missing` and the
+widget shows that message, rather than inventing data or failing silently.
 
 ## API
 
@@ -40,9 +37,9 @@ the two apart without reading the logs.
 | `GET /api/countries?q=can` | Same list, filtered server-side by name or code prefix |
 | `GET /api/countries/:code` | Full detail for one ISO alpha-3 code, e.g. `/api/countries/CAN` |
 
-Success: `{ source, count, countries }` or `{ source, country }`.
-Failure: `{ error: { code, message } }` with `400` (malformed code), `404` (unknown country) or
-`502` (upstream unavailable).
+Success: `{ count, countries }` or `{ country }`.
+Failure: `{ error: { code, message } }` with `400` (malformed code), `404` (unknown country),
+`502` (upstream unavailable) or `503` (no API key configured).
 
 ```bash
 curl localhost:3000/api/countries/CAN
@@ -52,8 +49,7 @@ curl localhost:3000/api/countries?q=port
 ## How the data flows
 
 ```
-page.tsx (server)  ──► lib/countries ──► REST Countries v5   (key present)
-       │                    └────────► countries-snapshot.json (no key / upstream down)
+page.tsx (server)  ──► lib/countries ──► REST Countries v5
        │ initial list rendered into the HTML
        ▼
 CountryWidget (client) ──fetch──► /api/countries/:code ──► lib/countries
@@ -66,8 +62,8 @@ CountryWidget (client) ──fetch──► /api/countries/:code ──► lib/c
   page on the free plan), unwraps the `data.objects` envelope, and maps each record onto the app's
   own types. Every upstream field is treated as optional, so a renamed or missing field drops one
   record instead of breaking the page.
-- `src/lib/countries/index.ts` — picks the provider, memoises the full list per server process for
-  an hour, and degrades to the snapshot on failure.
+- `src/lib/countries/index.ts` — memoises the full list per server process for an hour, and never
+  caches a rejection, so a failed load is retried by the next caller rather than pinned for an hour.
 - `src/lib/countries/types.ts` — the shapes the UI and routes speak. Nothing downstream of the
   client knows REST Countries' field names.
 - The list is fetched once on the server and rendered into the initial HTML, so the dropdown is
@@ -81,32 +77,23 @@ npm test           # vitest run
 npm run test:watch
 ```
 
-91 tests, no network access — `fetch` is stubbed, so the suite is deterministic and runs in ~3s.
+92 tests, no network access — `fetch` is stubbed, so the suite is deterministic and runs in ~3s.
 
 | File | What it pins down |
 | --- | --- |
 | `lib/http.test.ts` | Retry on 408/429/5xx, never on other 4xx, timeout and transport failures wrapped as `NetworkError`, caller aborts respected, headers merged |
 | `lib/countries/restcountries.test.ts` | Mapping a v5 record, skipping unusable records, defaults for absent optional fields, pagination across pages, bearer auth, error envelopes, 404 as `null` |
-| `lib/countries/index.test.ts` | Provider selection with and without a key, list cached to a single upstream call, degradation to the snapshot on outage or rejected key, malformed codes rejected before any I/O |
-| `app/api/countries/*.test.ts` | Route contracts: 200 payload shape, `q` filtering, cache headers, 400 / 404 / 502 error envelopes |
+| `lib/countries/index.test.ts` | Missing key refused before any request, list cached to a single upstream call, failures not cached, outages and rejected keys propagated rather than hidden, malformed codes rejected before any I/O |
+| `app/api/countries/*.test.ts` | Route contracts: 200 payload shape, `q` filtering, cache headers, 400 / 404 / 502 / 503 error envelopes |
 | `components/CountrySelect.test.tsx` | Open, search, filter by name or code, mouse and keyboard selection, Escape and click-away, disabled state, accessible name |
 | `components/CountryWidget.test.tsx` | Detail loading and rendering, API and transport errors surfaced to the user, list recovery when the server render came back empty, and out-of-order responses — a slow first request must not overwrite a newer selection |
 
-## The offline dataset
-
-`src/data/countries-snapshot.json` holds 250 countries and is regenerated by
-`scripts/generate-snapshot.mjs` from three free, keyless sources: mledoze/countries (names, ISO
-codes, capitals, regions, currencies, flag emoji), the World Bank `SP.POP.TOTL` indicator
-(population) and the IANA tz database (UTC offsets). 35 dependencies and territories have no World
-Bank population figure; those render as `—`.
-
-Flag images come from `flagcdn.com`, keyed off the ISO alpha-2 code, so the image host is the same
-whichever provider answered.
+Flag images come from `flagcdn.com`, keyed off the ISO alpha-2 code, so the widget renders one
+image host regardless of what the API returns.
 
 ## Notes
 
-- The live v5 code path is covered by a mock of the documented v5 envelope (pagination, auth
-  header, malformed records); it has not been exercised against the real endpoint, which needs a
-  key. If a field name differs from the published docs, the mapping in `restcountries.ts` is the
-  one place to adjust.
+- The v5 client is covered by tests against the documented v5 envelope (pagination, auth header,
+  malformed records). If a field name differs from the published docs, the mapping in
+  `restcountries.ts` is the one place to adjust.
 - The design is fixed-light, matching the reference screenshots supplied with the task.
