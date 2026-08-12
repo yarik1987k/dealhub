@@ -7,7 +7,7 @@ from a searchable dropdown and see its capital, region, currencies, population a
 
 ```bash
 npm install
-cp .env.example .env.local   # then add your key - see below
+cp .env.example .env.local   # paste the API key supplied with this submission
 npm run dev                  # http://localhost:3000
 ```
 
@@ -16,12 +16,14 @@ Other scripts: `npm run build`, `npm start`, `npm run lint`, `npm run typecheck`
 ## API key
 
 REST Countries **v5 requires an API key** (the old keyless `v3.1` endpoints were retired and now
-return a deprecation error). Get a free key at <https://restcountries.com> and put it in
+return a deprecation error). A working key is supplied with this submission - put it in
 `.env.local`:
 
 ```
-RESTCOUNTRIES_API_KEY=your-key-here
+RESTCOUNTRIES_API_KEY=<the key from the submission message>
 ```
+
+Any key from <https://restcountries.com> works just as well.
 
 The key is read server-side only and is sent upstream as `Authorization: Bearer <key>`. It never
 reaches the browser: the client only ever talks to this app's own `/api/countries` routes.
@@ -77,7 +79,7 @@ npm test           # vitest run
 npm run test:watch
 ```
 
-92 tests, no network access — `fetch` is stubbed, so the suite is deterministic and runs in ~3s.
+94 tests, no network access — `fetch` is stubbed, so the suite is deterministic and runs in ~3s.
 
 | File | What it pins down |
 | --- | --- |
@@ -88,12 +90,11 @@ npm run test:watch
 | `components/CountrySelect.test.tsx` | Open, search, filter by name or code, mouse and keyboard selection, Escape and click-away, disabled state, accessible name |
 | `components/CountryWidget.test.tsx` | Detail loading and rendering, API and transport errors surfaced to the user, list recovery when the server render came back empty, and out-of-order responses — a slow first request must not overwrite a newer selection |
 
-Flag images come from `flagcdn.com`, keyed off the ISO alpha-2 code, so the widget renders one
-image host regardless of what the API returns.
-
 ## Notes
 
-- The v5 client is covered by tests against the documented v5 envelope (pagination, auth header,
-  malformed records). If a field name differs from the published docs, the mapping in
-  `restcountries.ts` is the one place to adjust.
+- Flag images come from `flagcdn.com`, keyed off the ISO alpha-2 code, so the widget renders one
+  image host regardless of what the API returns.
+- The published v5 docs describe `currencies` as an object keyed by currency code; the live API
+  returns an array of `{ code, name, symbol }`. The mapper accepts both - the array shape was only
+  caught by running against the real endpoint.
 - The design is fixed-light, matching the reference screenshots supplied with the task.
