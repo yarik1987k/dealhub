@@ -1,0 +1,31 @@
+/**
+ * Editor canvas styles.
+ *
+ * Loaded into the iframed canvas via add_editor_style(), alongside tokens.css.
+ *
+ * Deliberately minimal. An earlier version painted the whole canvas navy to
+ * match the front end, but the block runs in `auto` mode: selecting it swaps
+ * the preview for ACF's edit form, rendered in this same canvas. A dark
+ * canvas made that form unreadable. The block paints its own background via
+ * `.dh-cases`, so the canvas itself must stay neutral.
+ */
+
+.editor-styles-wrapper {
+	font-family: var(--dh-font-sans);
+}
+
+/*
+ * Give ACF's in-canvas edit form room to breathe. Without this the nested
+ * repeaters inherit the block's full-bleed alignment and sit edge to edge.
+ */
+.editor-styles-wrapper .acf-block-fields {
+	max-width: 1100px;
+	margin-inline: auto;
+	padding: 1.5rem;
+	background: #fff;
+	color: #1e1e1e;
+}
+
+.editor-styles-wrapper .acf-block-fields .acf-label label {
+	color: #1e1e1e;
+}

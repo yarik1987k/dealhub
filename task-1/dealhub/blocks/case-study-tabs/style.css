@@ -1,0 +1,1209 @@
+/**
+ * Case Study Tabs — front-end styles.
+ *
+ * Mobile-first. Measurements come from the Figma comp, cross-checked against
+ * the live dealhub.io build (which exposes the same numbers as utility
+ * classes). Values live in tokens.css; this file contains no raw hexes.
+ *
+ * Loaded only on pages containing the block (declared as `style` in block.json).
+ */
+
+/* =======================================================================
+   Section shell
+   ======================================================================= */
+
+.dh-cases {
+	position: relative;
+	overflow: hidden;
+	padding-block: var(--dh-section-py);
+	background-color: var(--dh-navy-900);
+	isolation: isolate;
+}
+
+.dh-cases__inner {
+	position: relative;
+	width: min(100% - var(--dh-gutter) * 2, var(--dh-container));
+	margin-inline: auto;
+}
+
+/*
+ * The teal wash behind the card is a single blurred orb, not a gradient on
+ * the card itself — that is why the card can stay a flat translucent surface
+ * and still read as lit from the upper left.
+ */
+.dh-cases__glow {
+	position: absolute;
+	/* Centred on the section so it sits behind the card rather than up under
+	   the heading. Desktop repositions it to the comp's offset below. */
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	translate: -50% -50%;
+	z-index: -1;
+	width: var(--dh-glow-size);
+	height: var(--dh-glow-size);
+	border-radius: 50%;
+	background: var(--dh-glow);
+	/*
+	 * Figma calls this a background blur, but the orb sits behind everything
+	 * and has nothing to sample — `filter` blurs the shape itself, which is
+	 * what produces the soft wash the comp shows.
+	 */
+	filter: blur(var(--dh-glow-blur));
+	pointer-events: none;
+}
+
+/* =======================================================================
+   Heading
+   ======================================================================= */
+
+.dh-cases__heading {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: var(--dh-heading-gap);
+	margin: 0 0 var(--dh-heading-mb);
+	color: var(--dh-white);
+	font-size: var(--dh-heading-size);
+	line-height: var(--dh-heading-lh);
+	text-align: center;
+}
+
+/* The heading's whole effect is weight contrast: a very light lead against a
+   very heavy emphasised word. */
+.dh-cases__heading-lead {
+	font-weight: var(--dh-heading-lead-weight);
+	letter-spacing: var(--dh-heading-lead-tracking);
+}
+
+.dh-cases__heading-mark {
+	position: relative;
+	display: inline-block;
+	font-weight: var(--dh-heading-mark-weight);
+	letter-spacing: var(--dh-heading-mark-tracking);
+	white-space: nowrap;
+}
+
+/* The hand-drawn stroke is a desktop flourish; the comp drops it on mobile,
+   where the heading has no room to spare under it. */
+.dh-cases__underline {
+	display: none;
+	position: absolute;
+	inset-block-start: 100%;
+	inset-inline: -4% -2%;
+	width: 106%;
+	height: auto;
+	margin-block-start: 0.06em;
+	pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+
+	.dh-cases__underline {
+		display: block;
+	}
+
+	/* Back to one baseline-aligned line once there is room for it. */
+	.dh-cases__heading {
+		flex-direction: row;
+		align-items: baseline;
+	}
+}
+
+/* =======================================================================
+   Tab strip  /  mobile slider
+   ======================================================================= */
+
+.dh-cases__tabs {
+	margin-block-end: 16px;
+}
+
+.dh-tablist {
+	display: flex;
+	overflow: hidden;
+	border-radius: var(--dh-radius-card);
+	background: var(--dh-surface-tablist);
+}
+
+.dh-tab {
+	position: relative;
+	display: flex;
+	flex: 1 1 0;
+	align-items: center;
+	justify-content: center;
+	min-width: 0;
+	height: var(--dh-tab-height);
+	padding: 0;
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	cursor: pointer;
+	transition: background-color 300ms ease-in-out;
+}
+
+/* Hover only where hovering is real: on touch the state sticks after a tap
+   and would leave an inactive tab painted as though it were selected. */
+@media (hover: hover) {
+
+	.dh-tab:hover {
+		background: var(--dh-surface-tab-hover);
+	}
+
+	.dh-tab:hover::after {
+		opacity: 1;
+	}
+
+	.dh-tab:hover .dh-tab__logo {
+		opacity: 1;
+	}
+}
+
+.dh-tab.is-selected {
+	background: var(--dh-surface-tab-active);
+}
+
+/*
+ * Selected state is a 2px rule that fades out towards both ends, so it reads
+ * as a glow under the logo rather than a hard underline.
+ */
+.dh-tab::after {
+	content: "";
+	position: absolute;
+	inset-block-end: 0;
+	inset-inline-start: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--dh-tab-underline);
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+
+.dh-tab.is-selected::after {
+	opacity: 1;
+}
+
+.dh-tab__logo {
+	width: auto;
+	max-width: 100%;
+	height: var(--dh-tab-logo-h);
+	object-fit: contain;
+	opacity: 0.6;
+	transition: opacity 300ms ease-in-out;
+}
+
+.dh-tab:focus-visible .dh-tab__logo,
+.dh-tab.is-selected .dh-tab__logo {
+	opacity: 1;
+}
+
+.dh-tab__label {
+	color: var(--dh-white);
+	font-size: var(--dh-label-size);
+	font-weight: 300;
+	opacity: 0.6;
+}
+
+.dh-tab.is-selected .dh-tab__label {
+	opacity: 1;
+}
+
+/* =======================================================================
+   Panels + card
+   ======================================================================= */
+
+.dh-panel:focus-visible {
+	outline: 2px solid var(--dh-cyan-400);
+	outline-offset: 6px;
+	border-radius: var(--dh-radius-card);
+}
+
+.dh-card {
+	position: relative;
+	display: grid;
+	gap: 16px;
+	padding: var(--dh-card-padding);
+	background: var(--dh-surface-card);
+	border-radius:
+		var(--dh-radius-card)
+		var(--dh-radius-card)
+		var(--dh-radius-card)
+		var(--dh-radius-card-bl);
+	backdrop-filter: blur(40px);
+}
+
+/*
+ * 1px gradient border.
+ *
+ * `border-image` cannot be used here: it ignores border-radius, so the stroke
+ * would square off the corners — including the 80px bottom-left one that is
+ * the card's most distinctive edge. Painting the gradient on a pseudo-element
+ * and masking out everything except a 1px ring follows the radius exactly.
+ */
+.dh-card::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	padding: 1px;
+	border-radius: inherit;
+	background: var(--dh-card-border);
+	-webkit-mask:
+		linear-gradient(#000 0 0) content-box,
+		linear-gradient(#000 0 0);
+	mask:
+		linear-gradient(#000 0 0) content-box,
+		linear-gradient(#000 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	pointer-events: none;
+}
+
+/* =======================================================================
+   Quote
+   ======================================================================= */
+
+.dh-card__quote {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.dh-card__quote-mark {
+	width: var(--dh-quote-mark-w);
+	height: auto;
+	margin-block-end: 24px;
+	color: var(--dh-mint-400);
+	flex: none;
+}
+
+.dh-card__quote-text {
+	margin: 0;
+	color: var(--dh-white);
+	font-size: var(--dh-quote-size);
+	font-weight: 400;
+	line-height: var(--dh-quote-lh);
+	letter-spacing: var(--dh-quote-tracking);
+	text-wrap: pretty;
+}
+
+.dh-card__quote-text p {
+	margin: 0;
+}
+
+.dh-card__author {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 20px;
+	margin-block-start: var(--dh-quote-author-gap);
+}
+
+/* A fixed height rather than a bare min-height: with `height: auto` each
+   client logo would render at its own intrinsic size (92px for Redis, 94px
+   for Tipalti in the current assets) and the row would jump between tabs.
+   `flex: none` stops a long author name squeezing it. */
+.dh-card__author-logo {
+	flex: none;
+	width: auto;
+	height: var(--dh-author-logo-h);
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.dh-card__author-meta {
+	display: flex;
+	flex-direction: column;
+}
+
+.dh-card__author-name {
+	color: var(--dh-white);
+	font-family: var(--dh-font-script);
+	font-size: var(--dh-author-size);
+	font-weight: 700;
+	line-height: var(--dh-author-lh);
+}
+
+.dh-card__author-role {
+	color: var(--dh-white);
+	font-size: var(--dh-author-role-size);
+	font-weight: 400;
+	line-height: var(--dh-author-role-lh);
+}
+
+/* ---- Case study button ------------------------------------------------ */
+
+.dh-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	width: 100%;
+	max-width: 22rem;
+	margin-block-start: 24px;
+	padding: 8px 8px 8px 24px;
+	background: rgb(255 255 255 / 8%);
+	border: 0;
+	border-radius: var(--dh-radius-pill);
+	color: var(--dh-white);
+	font-size: var(--dh-label-size);
+	font-weight: 400;
+	text-decoration: none;
+	transition: background-color 200ms ease;
+}
+
+.dh-btn:hover {
+	background: rgb(255 255 255 / 16%);
+}
+
+.dh-btn__icon {
+	display: grid;
+	place-items: center;
+	flex: none;
+	width: 36px;
+	height: 36px;
+	background: rgb(255 255 255 / 20%); /* #FFFFFF33 */
+	border-radius: 50%;
+}
+
+.dh-btn__icon svg {
+	width: 13px;
+	height: 7px;
+}
+
+/* =======================================================================
+   Facts: solutions, CRM, stats
+   ======================================================================= */
+
+.dh-card__facts {
+	display: grid;
+	gap: 8px;
+}
+
+/* Container for the two info boxes. The stats row is its sibling, not a
+   member — that is the split the comp uses. */
+.dh-facts-group {
+	display: grid;
+	gap: 8px;
+}
+
+.dh-facts {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 20px var(--dh-facts-pad-x);
+	background: var(--dh-surface-box);
+	border-radius: var(--dh-radius-box);
+}
+
+.dh-facts__label {
+	position: relative;
+	margin: 0;
+	color: var(--dh-white);
+	font-size: var(--dh-facts-label-size);
+	font-weight: 300;
+	line-height: var(--dh-facts-label-lh);
+}
+
+/* A short fixed accent bar, not a text-width border: 34px of mint sitting
+   7px below the label. A border-bottom would track the text width and grow
+   with longer labels, which is not what the design does. */
+.dh-facts__label::after {
+	content: "";
+	position: absolute;
+	inset-block-end: -7px;
+	inset-inline-start: 0;
+	width: var(--dh-accent-bar);
+	height: 2px;
+	background: var(--dh-mint-400);
+}
+
+.dh-facts__list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	gap: 7px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.dh-facts__item {
+	display: flex;
+	flex: none;
+	flex-direction: column;
+	align-items: center;
+	gap: 13px;
+	width: var(--dh-facts-item-w);
+	text-align: center;
+}
+
+.dh-facts__icon {
+	width: auto;
+	height: 32px;
+	object-fit: contain;
+}
+
+/* #FFFFFF80 in the spec is the text fill, not a fill behind the text —
+   --dh-muted is exactly that value. A literal background would put a
+   translucent white box behind "CPQ" on the teal tile. */
+.dh-facts__caption {
+	color: var(--dh-muted);
+	font-size: var(--dh-facts-caption-size);
+	font-weight: 400;
+	line-height: var(--dh-facts-caption-lh);
+	text-align: center;
+}
+
+/* ---- Stats ------------------------------------------------------------ */
+
+.dh-stats {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.dh-stats__item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 16px 20px;
+	background: var(--dh-surface-box);
+	border-radius: var(--dh-radius-box);
+}
+
+.dh-stats__value {
+	color: var(--dh-mint-400);
+	font-size: var(--dh-stat-size);
+	font-weight: var(--dh-stat-weight);
+	line-height: var(--dh-stat-lh);
+	letter-spacing: var(--dh-stat-tracking);
+	/* "3 geo" and "4 → 1" are single units — never break them across lines. */
+	white-space: nowrap;
+}
+
+.dh-stats__caption {
+	color: var(--dh-white);
+	font-size: var(--dh-stat-caption-size);
+	font-weight: var(--dh-stat-caption-weight);
+	line-height: var(--dh-stat-caption-lh);
+}
+
+/* =======================================================================
+   Video
+   ======================================================================= */
+
+.dh-video__frame {
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 223.1 / 398.87;
+	background: var(--dh-surface-box);
+	border-radius: var(--dh-radius-box);
+}
+
+.dh-video__poster,
+.dh-video__frame > iframe,
+.dh-video__frame > video,
+.dh-video__frame > wistia-player {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	object-fit: cover;
+}
+
+.dh-video__play {
+	position: absolute;
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	display: grid;
+	place-items: center;
+	width: 64px;
+	height: 64px;
+	translate: -50% -50%;
+	z-index: 4;
+	background: rgb(255 255 255 / 28%);
+	backdrop-filter: blur(6px);
+	border: 0;
+	border-radius: 50%;
+	color: var(--dh-white);
+	cursor: pointer;
+	transition: background-color 200ms ease, scale 200ms ease;
+}
+
+.dh-video__play:hover {
+	background: rgb(255 255 255 / 42%);
+	scale: 1.06;
+}
+
+.dh-video__play svg {
+	width: 45%;
+	height: 45%;
+	margin-inline-start: 6%;
+}
+
+/* Badge and nameplate belong to the poster state; once the real player is in
+   the DOM they would sit on top of the provider's own controls. */
+.dh-video__badge {
+	position: absolute;
+	inset-inline: 8px;
+	padding: 8px 12px;
+	background: var(--dh-mint-200);
+	border-radius: 8px;
+	color: var(--dh-navy-900);
+	text-align: center;
+}
+
+.dh-video__badge {
+	inset-block-start: 8px;
+	background: var(--dh-mint-100);
+}
+
+.dh-video__badge-img {
+	width: auto;
+	height: 16px;
+	margin-inline: auto;
+	object-fit: contain;
+}
+
+
+
+
+/*
+ * The play button goes as soon as it is pressed — it has done its job.
+ */
+.dh-video.is-playing .dh-video__play {
+	display: none;
+}
+
+/*
+ * The poster does NOT. It stays on top, fully opaque, while the frame grows
+ * and the player loads, then cross-fades out once the player reports it is
+ * ready. Hiding it the moment playback was requested left the frame empty
+ * mid-expansion — the flicker.
+ */
+/*
+ * Layering: poster and badge sit above the player so the frame is never empty
+ * while it grows, but the play button sits above BOTH. Raising the poster
+ * without raising the button put the image over the control and swallowed
+ * every click.
+ *
+ * Neither is ever interactive — clicks pass straight through to the button
+ * beneath, which is what makes tapping the image itself work.
+ */
+.dh-video__poster {
+	z-index: 2;
+	pointer-events: none;
+	transition: opacity 350ms ease;
+}
+
+.dh-video__badge {
+	z-index: 3;
+	pointer-events: none;
+	transition: opacity 350ms ease;
+}
+
+/* Both classes required: is-ready alone must never hide the poster, or a
+   video torn down mid-load leaves an empty frame. */
+.dh-video.is-playing.is-ready .dh-video__poster,
+.dh-video.is-playing.is-ready .dh-video__badge {
+	opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.dh-video__poster,
+	.dh-video__badge {
+		transition: none;
+	}
+}
+
+/* =======================================================================
+   MOBILE — below 1024px
+   Tabs become a scroll-snap slider of fixed 290px slides; the card stacks
+   quote → video → solutions → stat tiles.
+   ======================================================================= */
+
+@media (max-width: 1023px) {
+
+	/*
+	 * The tab strip is NOT a scroll container on mobile. Two native scrollers
+	 * mirroring each other's scrollLeft fought the browser's own snapping and
+	 * momentum, which made dragging feel broken. Instead the panels are the
+	 * single source of truth and this track is moved with a transform, which
+	 * nothing else competes over and which the compositor can move in step
+	 * with the finger.
+	 *
+	 * Its padding and pitch match the panel carousel exactly, so translating
+	 * by the panels' scroll offset aligns the two precisely.
+	 */
+	/* Full-bleed driven by measurement, not arithmetic. --dh-vw and --dh-bleed
+	   are set in JS from the element's real position, because both -20px and
+	   calc(50% - 50vw) assume the container is centred in the viewport; any
+	   asymmetric ancestor padding shifts both carousels off-centre together. */
+	.dh-cases__tabs {
+		width: var(--dh-vw, 100vw);
+		margin-inline: var(--dh-bleed, 0) 0;
+	}
+
+	/*
+	 * A real scroll container, exactly like the panel carousel — same snap,
+	 * same padding, same pitch. Moving it with a transform instead meant
+	 * hand-writing the release physics (velocity, thresholds, wrap timing),
+	 * and every hand-written version felt worse than the browser's. Whichever
+	 * of the two the finger is on drives; the other is synced to it.
+	 */
+	.dh-tablist {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: var(--dh-slide, 290px);
+		gap: 10px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		width: var(--dh-vw, 100vw);
+		margin-inline: var(--dh-bleed, 0) 0;
+		padding-inline: max(var(--dh-gutter), calc((var(--dh-vw, 100vw) - var(--dh-slide, 290px)) / 2));
+		border-radius: 0;
+		background-color: var(--dh-surface-track);
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: max(var(--dh-gutter), calc((var(--dh-vw, 100vw) - var(--dh-slide, 290px)) / 2));
+		scrollbar-width: none;
+		-webkit-overflow-scrolling: touch;
+		overscroll-behavior-x: contain;
+	}
+
+	.dh-tablist::-webkit-scrollbar {
+		display: none;
+	}
+
+	.dh-tab {
+		scroll-snap-align: center;
+		background: none;
+	}
+
+	.dh-tab.is-selected {
+		background: var(--dh-surface-tab-active);
+	}
+
+	/*
+	 * The panels are a second carousel, scroll-synced with the tab strip:
+	 * the active story sits centred with its neighbours peeking either side.
+	 * Slides are a fixed 290px and the side padding is whatever is left of
+	 * the viewport, which is what centres them.
+	 */
+	.dh-cases__panels {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: var(--dh-slide, 290px);
+		gap: 10px;
+		overflow-x: auto;
+		width: var(--dh-vw, 100vw);
+		margin-inline: var(--dh-bleed, 0) 0;
+		/* Side padding is half the leftover viewport, which is what lets the
+		   first and last slides reach the centre. Measured against 100vw
+		   rather than 100%: percentage padding resolves against the
+		   containing block, not this scroller, which left slides ~20px off
+		   centre. max() keeps it sane if the viewport is narrower than a
+		   slide. */
+		padding-inline: max(var(--dh-gutter), calc((var(--dh-vw, 100vw) - var(--dh-slide, 290px)) / 2));
+		scroll-padding-inline: max(var(--dh-gutter), calc((var(--dh-vw, 100vw) - var(--dh-slide, 290px)) / 2));
+		scroll-snap-type: x mandatory;
+		scrollbar-width: none;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.dh-cases__panels::-webkit-scrollbar {
+		display: none;
+	}
+
+	.dh-panel {
+		scroll-snap-align: center;
+		width: var(--dh-slide, 290px);
+		border-radius: var(--dh-radius-box);
+	}
+
+	/*
+	 * Neighbouring slides collapse to a flat colour block rather than showing
+	 * a half-readable story. `visibility: hidden` keeps their layout, so every
+	 * slide still reserves identical space and the carousel height never
+	 * shifts as you swipe — hiding them with display would collapse the row.
+	 */
+	.dh-panel:not(.is-selected) {
+		background: rgb(103 242 215 / 10%);
+	}
+
+	.dh-panel:not(.is-selected) > * {
+		visibility: hidden;
+	}
+
+	/* On mobile the slide itself is the frame; the individual blocks inside
+	   carry their own surfaces, so the card wrapper goes transparent. */
+	.dh-card {
+		width: var(--dh-slide, 290px);
+		height: 100%;
+		/*
+		 * Every slide is stretched to the height of the tallest, so the slack
+		 * has to go somewhere. Sending it to the quote row means a story with
+		 * a short quote — or no video at all — still fills its slide instead
+		 * of trailing off into empty space. Rows follow `order`, so row 1 is
+		 * always the quote whether or not a video is present.
+		 */
+		/* Only row 1 is declared; the rest are implicit, so a missing video
+		   creates no third row — and therefore no trailing gap. */
+		grid-template-rows: 1fr;
+		gap: 10px;
+		padding: 0;
+		background: none;
+		border: 0;
+		border-radius: 0;
+		backdrop-filter: none;
+	}
+
+	/*
+	 * A fixed floor rather than content-driven height, so a one-line quote
+	 * and a six-line quote produce the same size card. Without it the slides
+	 * were visibly different sizes as you swiped.
+	 */
+	.dh-card__quote {
+		order: 1;
+		min-height: 420px;
+		padding: 20px 10px;
+		background: var(--dh-surface-tile);
+		border-radius: var(--dh-radius-box);
+		text-align: center;
+		align-items: center;
+	}
+
+	.dh-card__quote-mark {
+		margin-inline: auto;
+	}
+
+	.dh-card__author {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.dh-video {
+		order: 2;
+	}
+
+	/* The wrapper exists for the desktop two-column split; on mobile its
+	   children need to be direct grid items again so the quote → video →
+	   facts order still applies. */
+	.dh-card__aside,
+	.dh-facts-group {
+		display: contents;
+	}
+
+	/* No card frame on mobile: each block inside carries its own surface. */
+	.dh-card::before {
+		display: none;
+	}
+
+	/*
+	 * The glow belongs to the tiles on mobile, so it rides with each slide
+	 * rather than sitting at a fixed point in the section. Anchoring the
+	 * section-level orb here is not possible — the facts live inside a
+	 * horizontally scrolling carousel — so each facts block carries its own.
+	 */
+	.dh-cases__glow {
+		display: none;
+	}
+
+	.dh-card__facts {
+		position: relative;
+		order: 3;
+		/* Two-column tile grid shared by the CRM box and the stats. */
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 10px;
+	}
+
+	.dh-card__facts::before {
+		content: "";
+		position: absolute;
+		inset-block-start: 50%;
+		inset-inline-start: 50%;
+		z-index: -1;
+		width: var(--dh-glow-size);
+		height: var(--dh-glow-size);
+		translate: -50% -50%;
+		border-radius: 50%;
+		background: var(--dh-glow);
+		filter: blur(var(--dh-glow-blur));
+		pointer-events: none;
+	}
+
+	/* Mobile tiles are a fixed 140px tall so the 2x2 grid stays even
+	   regardless of how long the captions are. */
+	.dh-facts--crm,
+	.dh-stats__item {
+		height: 140px;
+		justify-content: space-between;
+		padding: 20px 15px;
+		background: var(--dh-surface-tile);
+		border-radius: var(--dh-radius-box);
+	}
+
+	/* Solutions run full width and scroll sideways when there are more than
+	   fit — no truncation, no wrap. */
+	/*
+	 * No accent bar on mobile. The comp carries it on desktop only — neither
+	 * the Solutions box nor the CRM tile shows one at this size.
+	 */
+	.dh-facts__label::after {
+		display: none;
+	}
+
+	.dh-facts__label {
+		padding-block-end: 0;
+		text-align: center;
+	}
+
+	.dh-facts:not(.dh-facts--crm) {
+		grid-column: 1 / -1;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 12px;
+		padding: 20px 5px;
+		background: var(--dh-surface-tile);
+	}
+
+	.dh-facts:not(.dh-facts--crm) .dh-facts__list {
+		overflow-x: auto;
+		padding-block-end: 4px;
+		scrollbar-width: thin;
+		/* `safe` keeps the first icon reachable once the row overflows. */
+		justify-content: safe center;
+	}
+
+	/*
+	 * The CRM tile reads logo → name → label, with the name and label sitting
+	 * together at the bottom rather than the name hanging off the logo.
+	 *
+	 * The list and its item collapse to `display: contents` so the icon, the
+	 * name and the label all become siblings in this flex column and can be
+	 * ordered and spaced independently. An auto margin under the icon does
+	 * the separating, which keeps the pair below it tight to each other.
+	 */
+	.dh-facts--crm {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2px;
+	}
+
+	.dh-facts--crm .dh-facts__list,
+	.dh-facts--crm .dh-facts__item {
+		display: contents;
+	}
+
+	.dh-facts--crm .dh-facts__icon {
+		order: 1;
+		margin-block-end: auto;
+	}
+
+	.dh-facts--crm .dh-facts__caption {
+		order: 2;
+		color: var(--dh-white);
+		font-size: var(--dh-facts-label-size);
+		font-weight: 700;
+		line-height: var(--dh-facts-label-lh);
+		text-align: start;
+	}
+
+	.dh-facts--crm .dh-facts__label {
+		order: 3;
+		text-align: start;
+	}
+
+	/* Fold the stats into the parent tile grid so a CRM tile and a stat tile
+	   can share a row. The list keeps its semantics via role="list". */
+	.dh-stats {
+		display: contents;
+	}
+
+	/*
+	 * Height is driven by padding, not aspect-ratio, so it can be animated:
+	 * aspect-ratio is not reliably transitionable across browsers, which is
+	 * why the live build uses the same padding technique.
+	 *
+	 * The poster sits at 16:9 and the frame grows to the source's portrait
+	 * ratio on play — the two mobile comps are these two states, not two
+	 * alternative designs.
+	 */
+	.dh-video__frame {
+		aspect-ratio: auto;
+		height: 0;
+		/* 16:9 of a 290px slide is only 163px, so the floor decides the
+		   collapsed height; once expanded the padding is far past it and
+		   takes over again. */
+		min-height: var(--dh-video-min-h-mobile);
+		padding-block-end: var(--dh-video-collapsed);
+		transition: padding-block-end 500ms ease-out;
+	}
+
+	.dh-video.is-playing .dh-video__frame {
+		padding-block-end: var(--dh-video-expanded);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+
+		.dh-video__frame {
+			transition: none;
+		}
+	}
+
+	.dh-btn {
+		max-width: none;
+		height: 60px;
+		padding: 10px 10px 10px 26px;
+		background: var(--dh-surface-tile);
+		border-radius: 300px;
+		font-size: 16.85px;
+		font-weight: 500;
+		line-height: 1;
+		text-align: center;
+	}
+
+	/* Height 60 less 10px padding top and bottom leaves a 40px circle. */
+	.dh-btn__icon {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/* =======================================================================
+   DESKTOP — 1024px and up
+   Three columns: quote / facts / video.
+   ======================================================================= */
+
+@media (min-width: 1024px) {
+
+	/* Back to the comp's off-centre position once there is room for it. */
+	.dh-cases__glow {
+		inset-block-start: 60px;
+		inset-inline-start: 230px;
+		translate: none;
+	}
+
+	.dh-cases__tabs {
+		margin-block-end: 30px;
+	}
+
+	/*
+	 * Mobile only, per the comps: the desktop card carries no CTA.
+	 * `display: none` rather than a visual-only hide, so the link is not
+	 * announced to screen readers on a breakpoint where it does not exist.
+	 */
+	.dh-btn {
+		display: none;
+	}
+
+	/*
+	 * Above the carousel breakpoint only the selected panel shows. Driven by
+	 * CSS rather than a `hidden` attribute so the correct panel is visible
+	 * before the deferred script runs, and so the section still works with
+	 * JavaScript unavailable. display:none keeps the hidden panels out of the
+	 * accessibility tree while leaving them in the DOM for crawlers.
+	 */
+	.dh-panel:not(.is-selected) {
+		display: none;
+	}
+
+	.dh-card {
+		/* 613 / 495 / 223.099 at 1920, held proportionally below that. */
+		/* The quote gives up width here so the facts column can hold a full
+		   solutions row; 1920 restores the comp's split below. */
+		grid-template-columns: minmax(0, 430fr) minmax(0, 780fr);
+		grid-template-areas: "quote aside";
+		column-gap: 40px;
+		/* Both columns run the full height of the card so the author row and
+		   the stats row can each sit on its bottom edge, and therefore on the
+		   same line as each other. */
+		align-items: stretch;
+	}
+
+	.dh-card__quote {
+		grid-area: quote;
+		height: 100%;
+	}
+
+	.dh-card__facts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-self: stretch;
+	}
+
+	/* Facts and video sit side by side inside the aside, which is what makes
+	   the card read as two columns rather than three. */
+	.dh-card__aside {
+		grid-area: aside;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 20px;
+		min-height: 394px;
+	}
+
+	.dh-card__facts {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	.dh-video {
+		flex: 0 0 var(--dh-video-width);
+		width: var(--dh-video-width);
+	}
+
+	/*
+	 * Height follows the poster rather than a fixed ratio, so the card is
+	 * driven by the artwork the editor uploads — with a 400px floor so a
+	 * short image cannot leave the column stubby next to the quote.
+	 *
+	 * The floor sits on the image, not the frame: putting it on the frame
+	 * would stretch the box while the image kept its own height, leaving a
+	 * band of empty background underneath. `object-fit: cover` (inherited)
+	 * crops instead.
+	 */
+	.dh-video__frame {
+		aspect-ratio: auto;
+		min-height: var(--dh-video-min-h);
+	}
+
+	.dh-video__poster {
+		position: static;
+		width: 100%;
+		height: auto;
+		min-height: var(--dh-video-min-h);
+	}
+
+	/*
+	 * Capped so a long solutions row cannot push the box out of its column
+	 * and under the video — five icons measured 551px in a 456px column.
+	 * The icon row scrolls inside the cap rather than being truncated, so
+	 * every solution stays reachable however many an editor adds.
+	 */
+	/*
+	 * Four solutions is what the design accounts for and what fits on one row.
+	 * A fifth cannot be squeezed in without the captions colliding — "DealRoom"
+	 * is wider than any item width that would fit five — so the row wraps.
+	 * Wrapping rather than scrolling: a scrollbar inside a 20px-tall strip
+	 * lands on top of the captions.
+	 */
+	/*
+	 * Grid, not flex, for the solutions box. Once the list wraps, its
+	 * min-content width is a single item, and a flex parent will happily
+	 * shrink it that far — three solutions ended up on three rows. A
+	 * `min-content` label column instead hands the list every pixel the label
+	 * does not need, which is what lets four sit on one row.
+	 *
+	 * min-content on the label is also what the comp shows: "Solutions" over
+	 * "used", broken at its own longest word.
+	 */
+	.dh-facts:not(.dh-facts--crm) {
+		display: grid;
+		grid-template-columns: min-content minmax(0, 1fr);
+		gap: 12px;
+	}
+
+	/* A fifth solution has nowhere to go on one row, so it wraps rather than
+	   overflowing or forcing the icons down to an illegible size. */
+	.dh-facts:not(.dh-facts--crm) .dh-facts__list {
+		flex-wrap: wrap;
+		row-gap: 14px;
+	}
+
+	.dh-facts {
+		width: 100%;
+		/* Hold the full column width: as a flex item the box would otherwise
+		   shrink to its content and stop lining up with the box below it. */
+		min-width: 100%;
+		max-width: var(--dh-facts-max-w);
+		min-height: 84px;
+		align-items: center;
+	}
+
+	.dh-facts__list {
+		min-width: 0;
+		overflow-x: auto;
+		scrollbar-width: none;
+	}
+
+	.dh-facts__list::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Only enforced where the grid can satisfy it; below 1920 the columns are
+	   proportional and a hard 704 would overflow the card. */
+	@media (min-width: 1920px) {
+
+		.dh-card__quote {
+			min-width: 704px;
+		}
+	}
+
+	/* Author block pins to the bottom of the quote column so it lines up with
+	   the stats row in the middle column. */
+	/*
+	 * Pinned to the bottom of the quote column so it lines up with the stats
+	 * row opposite, with the 42px gap as a floor rather than a fixed value —
+	 * the two cannot both be constant unless every quote is the same length.
+	 */
+	.dh-card__author {
+		margin-block-start: auto;
+		padding-block-start: var(--dh-quote-author-gap);
+		/* Keep the logo and the name on one line. The column is narrower here
+		   than at 1920, so the default wrap dropped the name underneath. */
+		flex-wrap: nowrap;
+	}
+
+	.dh-card__author-meta {
+		min-width: 0;
+	}
+
+	.dh-card__quote-mark {
+		margin-block-end: 45px;
+	}
+
+	/* Stats become a divided row. Every column carries the rule, including
+	   the first — that is how the comp draws it. */
+	.dh-stats {
+		grid-template-columns: none;
+		grid-auto-flow: column;
+		grid-auto-columns: minmax(0, 1fr);
+		gap: var(--dh-stats-gap);
+		margin-block-start: 24px;
+	}
+
+	.dh-stats__item {
+		gap: 10px;
+		max-width: 134px;
+		padding: 0 0 0 22px;
+		background: none;
+		border-inline-start: 1px solid var(--dh-divider);
+		border-radius: 0;
+	}
+}
+
+/* =======================================================================
+   WIDE — 1920px and up
+   Exact column widths from the comp; the leftover space is distributed
+   between the columns rather than added to a fixed gap.
+   ======================================================================= */
+
+@media (min-width: 1920px) {
+
+	.dh-card {
+		/* 704 + 721 = 1425 inside a 1480 content box, so space-between leaves
+		   a 55px gutter between the columns. */
+		grid-template-columns: 704px 721px;
+		column-gap: 0;
+		justify-content: space-between;
+	}
+
+
+}

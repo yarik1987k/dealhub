@@ -1,0 +1,723 @@
+{
+	"key": "group_dh_case_study_tabs",
+	"title": "Case Study Tabs",
+	"fields": [
+		{
+			"key": "field_dh_tab_section",
+			"label": "Section",
+			"name": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "top",
+			"endpoint": 0
+		},
+		{
+			"key": "field_dh_heading_lead",
+			"label": "Heading",
+			"name": "heading_lead",
+			"type": "text",
+			"instructions": "Plain heading text",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "Loved. Adopted.",
+			"maxlength": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": ""
+		},
+		{
+			"key": "field_dh_heading_highlight",
+			"label": "Highlighted word",
+			"name": "heading_highlight",
+			"type": "text",
+			"instructions": "Bold, with underline",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"default_value": "Trusted",
+			"maxlength": "",
+			"placeholder": "",
+			"prepend": "",
+			"append": ""
+		},
+		{
+			"key": "field_dh_heading_underline",
+			"label": "Show underline stroke",
+			"name": "heading_underline",
+			"type": "true_false",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": [
+				[
+					{
+						"field": "field_dh_heading_highlight",
+						"operator": "!=empty"
+					}
+				]
+			],
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"message": "",
+			"default_value": 1,
+			"ui": 1,
+			"ui_on_text": "",
+			"ui_off_text": ""
+		},
+		{
+			"key": "field_dh_tab_cases",
+			"label": "Case studies",
+			"name": "",
+			"type": "tab",
+			"instructions": "",
+			"required": 0,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"placement": "top",
+			"endpoint": 0
+		},
+		{
+			"key": "field_dh_tabs",
+			"label": "Case studies",
+			"name": "tabs",
+			"type": "repeater",
+			"instructions": "One row per tab",
+			"required": 1,
+			"conditional_logic": 0,
+			"wrapper": {
+				"width": "",
+				"class": "",
+				"id": ""
+			},
+			"collapsed": "field_dh_tab_label",
+			"min": 1,
+			"max": 8,
+			"layout": "block",
+			"button_label": "Add case study",
+			"sub_fields": [
+				{
+					"key": "field_dh_tab_label",
+					"label": "Client name",
+					"name": "tab_label",
+					"type": "text",
+					"instructions": "Tab and alt text",
+					"required": 1,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"placeholder": "Intuit",
+					"prepend": "",
+					"append": ""
+				},
+				{
+					"key": "field_dh_tab_logo",
+					"label": "Client logo",
+					"name": "tab_logo",
+					"type": "image",
+					"instructions": "Tab and card",
+					"required": 1,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"return_format": "array",
+					"library": "all",
+					"preview_size": "medium",
+					"min_width": "",
+					"min_height": "",
+					"min_size": "",
+					"max_width": "",
+					"max_height": "",
+					"max_size": "",
+					"mime_types": ""
+				},
+				{
+					"key": "field_dh_subtab_quote",
+					"label": "Quote",
+					"name": "",
+					"type": "tab",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"placement": "top",
+					"endpoint": 0
+				},
+				{
+					"key": "field_dh_quote",
+					"label": "Quote",
+					"name": "quote",
+					"type": "textarea",
+					"instructions": "Quote marks added automatically",
+					"required": 1,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"rows": 5,
+					"placeholder": "",
+					"new_lines": ""
+				},
+				{
+					"key": "field_dh_author_name",
+					"label": "Author name",
+					"name": "author_name",
+					"type": "text",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"placeholder": "Lucy Anne Link",
+					"prepend": "",
+					"append": ""
+				},
+				{
+					"key": "field_dh_author_role",
+					"label": "Author role",
+					"name": "author_role",
+					"type": "text",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"placeholder": "Senior Director, GTM Operations",
+					"prepend": "",
+					"append": ""
+				},
+				{
+					"key": "field_dh_cta",
+					"label": "Case study link",
+					"name": "cta",
+					"type": "link",
+					"instructions": "Optional pill button",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"return_format": "array"
+				},
+				{
+					"key": "field_dh_subtab_video",
+					"label": "Video",
+					"name": "",
+					"type": "tab",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"placement": "top",
+					"endpoint": 0
+				},
+				{
+					"key": "field_dh_video_source",
+					"label": "Video source",
+					"name": "video_source",
+					"type": "button_group",
+					"instructions": "Where the video lives",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"choices": {
+						"file": "Uploaded file",
+						"wistia": "Wistia",
+						"url": "YouTube / Vimeo",
+						"none": "No video"
+					},
+					"default_value": "file",
+					"return_format": "value",
+					"allow_null": 0,
+					"layout": "horizontal"
+				},
+				{
+					"key": "field_dh_video_wistia",
+					"label": "Wistia media ID",
+					"name": "video_wistia_id",
+					"type": "text",
+					"instructions": "ID or Wistia URL",
+					"required": 0,
+					"conditional_logic": [
+						[
+							{
+								"field": "field_dh_video_source",
+								"operator": "==",
+								"value": "wistia"
+							}
+						]
+					],
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"placeholder": "qgc9lp34r1",
+					"prepend": "",
+					"append": ""
+				},
+				{
+					"key": "field_dh_video_file",
+					"label": "Video file",
+					"name": "video_file",
+					"type": "file",
+					"instructions": "MP4 recommended",
+					"required": 0,
+					"conditional_logic": [
+						[
+							{
+								"field": "field_dh_video_source",
+								"operator": "==",
+								"value": "file"
+							}
+						]
+					],
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"return_format": "array",
+					"library": "all",
+					"min_size": "",
+					"max_size": "",
+					"mime_types": "mp4,webm,mov,m4v"
+				},
+				{
+					"key": "field_dh_video_url",
+					"label": "Video URL",
+					"name": "video_url",
+					"type": "url",
+					"instructions": "YouTube or Vimeo",
+					"required": 0,
+					"conditional_logic": [
+						[
+							{
+								"field": "field_dh_video_source",
+								"operator": "==",
+								"value": "url"
+							}
+						]
+					],
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"placeholder": "https://www.youtube.com/watch?v=..."
+				},
+				{
+					"key": "field_dh_video_poster",
+					"label": "Poster image",
+					"name": "video_poster",
+					"type": "image",
+					"instructions": "Shown before playback",
+					"required": 0,
+					"conditional_logic": [
+						[
+							{
+								"field": "field_dh_video_source",
+								"operator": "!=",
+								"value": "none"
+							}
+						]
+					],
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"return_format": "array",
+					"library": "all",
+					"preview_size": "medium",
+					"min_width": "",
+					"min_height": "",
+					"min_size": "",
+					"max_width": "",
+					"max_height": "",
+					"max_size": "",
+					"mime_types": ""
+				},
+				{
+					"key": "field_dh_video_badge",
+					"label": "Badge logo",
+					"name": "video_badge",
+					"type": "image",
+					"instructions": "Logo above video",
+					"required": 0,
+					"conditional_logic": [
+						[
+							{
+								"field": "field_dh_video_source",
+								"operator": "!=",
+								"value": "none"
+							}
+						]
+					],
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"return_format": "array",
+					"library": "all",
+					"preview_size": "medium",
+					"min_width": "",
+					"min_height": "",
+					"min_size": "",
+					"max_width": "",
+					"max_height": "",
+					"max_size": "",
+					"mime_types": ""
+				},
+				{
+					"key": "field_dh_video_name",
+					"label": "Speaker name",
+					"name": "video_name",
+					"type": "text",
+					"instructions": "Used for accessibility",
+					"required": 0,
+					"conditional_logic": [
+						[
+							{
+								"field": "field_dh_video_source",
+								"operator": "!=",
+								"value": "none"
+							}
+						]
+					],
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "",
+					"maxlength": "",
+					"placeholder": "Colin Tanner",
+					"prepend": "",
+					"append": ""
+				},
+				{
+					"key": "field_dh_subtab_data",
+					"label": "Solutions & stats",
+					"name": "",
+					"type": "tab",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"placement": "top",
+					"endpoint": 0
+				},
+				{
+					"key": "field_dh_solutions_label",
+					"label": "Solutions label",
+					"name": "solutions_label",
+					"type": "text",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "Solutions used",
+					"maxlength": "",
+					"placeholder": "",
+					"prepend": "",
+					"append": ""
+				},
+				{
+					"key": "field_dh_solutions",
+					"label": "Solutions",
+					"name": "solutions",
+					"type": "repeater",
+					"instructions": "Scrolls on mobile",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"collapsed": "",
+					"min": 0,
+					"max": 8,
+					"layout": "table",
+					"button_label": "Add solution",
+					"sub_fields": [
+						{
+							"key": "field_dh_solution_icon",
+							"label": "Icon",
+							"name": "icon",
+							"type": "image",
+							"instructions": "",
+							"required": 0,
+							"conditional_logic": 0,
+							"wrapper": {
+								"width": "",
+								"class": "",
+								"id": ""
+							},
+							"return_format": "array",
+							"library": "all",
+							"preview_size": "thumbnail",
+							"min_width": "",
+							"min_height": "",
+							"min_size": "",
+							"max_width": "",
+							"max_height": "",
+							"max_size": "",
+							"mime_types": ""
+						},
+						{
+							"key": "field_dh_solution_label",
+							"label": "Label",
+							"name": "label",
+							"type": "text",
+							"instructions": "",
+							"required": 0,
+							"conditional_logic": 0,
+							"wrapper": {
+								"width": "",
+								"class": "",
+								"id": ""
+							},
+							"default_value": "",
+							"maxlength": "",
+							"placeholder": "DealRoom",
+							"prepend": "",
+							"append": ""
+						}
+					]
+				},
+				{
+					"key": "field_dh_crm_label",
+					"label": "CRM label",
+					"name": "crm_label",
+					"type": "text",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"default_value": "CRM used",
+					"maxlength": "",
+					"placeholder": "",
+					"prepend": "",
+					"append": ""
+				},
+				{
+					"key": "field_dh_crm_items",
+					"label": "CRM systems",
+					"name": "crm_items",
+					"type": "repeater",
+					"instructions": "",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"collapsed": "",
+					"min": 0,
+					"max": 4,
+					"layout": "table",
+					"button_label": "Add CRM",
+					"sub_fields": [
+						{
+							"key": "field_dh_crm_icon",
+							"label": "Icon",
+							"name": "icon",
+							"type": "image",
+							"instructions": "",
+							"required": 0,
+							"conditional_logic": 0,
+							"wrapper": {
+								"width": "",
+								"class": "",
+								"id": ""
+							},
+							"return_format": "array",
+							"library": "all",
+							"preview_size": "thumbnail",
+							"min_width": "",
+							"min_height": "",
+							"min_size": "",
+							"max_width": "",
+							"max_height": "",
+							"max_size": "",
+							"mime_types": ""
+						},
+						{
+							"key": "field_dh_crm_item_label",
+							"label": "Label",
+							"name": "label",
+							"type": "text",
+							"instructions": "",
+							"required": 0,
+							"conditional_logic": 0,
+							"wrapper": {
+								"width": "",
+								"class": "",
+								"id": ""
+							},
+							"default_value": "",
+							"maxlength": "",
+							"placeholder": "Salesforce",
+							"prepend": "",
+							"append": ""
+						}
+					]
+				},
+				{
+					"key": "field_dh_stats",
+					"label": "Stats",
+					"name": "stats",
+					"type": "repeater",
+					"instructions": "Three fit desktop row",
+					"required": 0,
+					"conditional_logic": 0,
+					"wrapper": {
+						"width": "",
+						"class": "",
+						"id": ""
+					},
+					"collapsed": "",
+					"min": 0,
+					"max": 4,
+					"layout": "table",
+					"button_label": "Add stat",
+					"sub_fields": [
+						{
+							"key": "field_dh_stat_value",
+							"label": "Value",
+							"name": "value",
+							"type": "text",
+							"instructions": "",
+							"required": 0,
+							"conditional_logic": 0,
+							"wrapper": {
+								"width": "",
+								"class": "",
+								"id": ""
+							},
+							"default_value": "",
+							"maxlength": "",
+							"placeholder": "100%",
+							"prepend": "",
+							"append": ""
+						},
+						{
+							"key": "field_dh_stat_caption",
+							"label": "Caption",
+							"name": "caption",
+							"type": "text",
+							"instructions": "",
+							"required": 0,
+							"conditional_logic": 0,
+							"wrapper": {
+								"width": "",
+								"class": "",
+								"id": ""
+							},
+							"default_value": "",
+							"maxlength": "",
+							"placeholder": "Adoption without resistance",
+							"prepend": "",
+							"append": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"location": [
+		[
+			{
+				"param": "block",
+				"operator": "==",
+				"value": "dealhub/case-study-tabs"
+			}
+		]
+	],
+	"menu_order": 0,
+	"position": "normal",
+	"style": "default",
+	"label_placement": "top",
+	"instruction_placement": "label",
+	"hide_on_screen": "",
+	"active": true,
+	"description": "Content for the \"Loved. Adopted. Trusted.\" case-study tabs block.",
+	"show_in_rest": 0,
+	"modified": 1786545858
+}

@@ -1,0 +1,23 @@
+/*
+Theme Name: DealHub
+Theme URI: https://example.com/dealhub
+Author: Yeroslav Kanonirov
+Description: Custom theme built for the "Loved. Adopted. Trusted." case-study tabs block. Classic theme with full block-editor support; all section content is managed through an ACF Gutenberg block.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 7.0
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dealhub
+Tags: custom-block, acf, responsive
+*/
+
+/*
+ * Intentionally empty.
+ *
+ * This file exists for the theme header only. Styles are split into
+ * assets/css/base.css (global tokens + reset) and per-block stylesheets
+ * declared in each block's block.json, so block CSS is only ever loaded
+ * on pages that actually contain the block.
+ */

@@ -1,0 +1,39 @@
+/**
+ * Case Study Tabs — editor-only styles.
+ *
+ * The block renders a real preview in the editor (block.json sets
+ * acf.mode = "preview"), so this file only covers states the front end
+ * never has: the empty placeholder, and keeping the preview clickable.
+ */
+
+.dh-placeholder {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	padding: 2.5rem 1.5rem;
+	background: var(--dh-navy-700, #0e213c);
+	border: 1px dashed rgb(110 216 243 / 45%);
+	border-radius: 12px;
+	color: #fff;
+	text-align: center;
+	font-family: var(--dh-font-sans, sans-serif);
+}
+
+.dh-placeholder strong {
+	font-size: 1rem;
+}
+
+.dh-placeholder span {
+	color: #c8d1dc;
+	font-size: 0.8125rem;
+}
+
+/*
+ * Inside the editor the preview is a static render — swiping and tab clicks
+ * are not wired up there. Making the strip non-interactive avoids the
+ * impression that the preview is broken when a tab does not respond.
+ */
+.block-editor-block-preview__content .dh-tab,
+.wp-block[data-type="dealhub/case-study-tabs"] .dh-tab {
+	cursor: default;
+}

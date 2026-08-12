@@ -1,0 +1,241 @@
+/**
+ * Design tokens.
+ *
+ * Values are taken from the Figma comp and cross-checked against the live
+ * dealhub.io build, whose markup exposes the same numbers as utility classes
+ * (p-[60px], rounded-bl-[80px], text-[50px], after:w-[34px], and so on).
+ *
+ * Type sizes are declared per breakpoint rather than interpolated, because
+ * the design specifies discrete steps (25 / 40 / 50 for the heading) rather
+ * than a fluid ramp. Sizes the design leaves unspecified still use clamp().
+ *
+ * Deliberately separate from base.css and containing only custom properties:
+ * the editor canvas is an iframe that needs these but must not inherit the
+ * dark `body` rule, or ACF's edit form renders white-on-navy.
+ */
+
+:root {
+	/* ---- Palette ------------------------------------------------------ */
+	--dh-navy-900: #07102f; /* section background */
+	--dh-navy-700: #0e213c; /* skip link, editor canvas */
+	--dh-white: #ffffff;
+	--dh-mint-400: #68f2d7; /* quote glyph, stat numbers, accent rules */
+	--dh-mint-200: #bbf5ea; /* video nameplate */
+	--dh-mint-100: #e7f5fe; /* video badge */
+	--dh-cyan-400: #6ed8f3; /* focus ring */
+
+	/* Translucent surfaces, all composited over --dh-navy-900. Kept as
+	   rgba rather than flattened hexes so they behave correctly over the
+	   blurred glow that sits behind the card. */
+	--dh-surface-tablist: rgb(34 209 175 / 2%);
+	--dh-surface-tab-active: rgb(104 242 215 / 15%);
+
+	/* Mobile tab strip. The track carries the tint; the buttons themselves are
+	   transparent, so only the active one adds a fill on top. Both values are
+	   flat per Figma — they read teal because the blurred glow sits behind
+	   them, not because anything here is a gradient. */
+	--dh-surface-track: rgb(103 242 215 / 10%); /* #67f2d71a */
+	--dh-tab-underline: radial-gradient(49.87% 182.99% at 50% 100%, #68f2d7 0%, #0d3047 100%);
+	--dh-surface-card: rgb(103 242 215 / 10%); /* #67F2D71A */
+	--dh-surface-box: rgb(104 242 215 / 11%);  /* desktop info boxes */
+	--dh-surface-tile: rgb(103 242 215 / 20%); /* #67F2D733 — mobile tiles */
+	--dh-surface-tab-hover: rgb(103 242 215 / 10%); /* #67F2D71A — tab hover */
+	--dh-glow: rgb(103 242 215 / 40%); /* #67F2D766 */
+	--dh-glow-size: 272px;
+	/*
+	 * Figma says 350. CSS blur() is a Gaussian and is not the same operation:
+	 * at 350px a 272px orb spreads over a ~700px radius and all but vanishes
+	 * — measured a 3–7/255 lift against the section navy. Scaled from the
+	 * desktop pairing that does read correctly (432px orb / 175px blur), the
+	 * equivalent here is ~110px.
+	 */
+	--dh-glow-blur: 110px;
+	--dh-card-border: linear-gradient(130.63deg, #67f2d7 2.27%, #082239 98.74%);
+
+	--dh-divider: rgb(255 255 255 / 50%); /* stat column rules */
+	--dh-muted: rgb(255 255 255 / 50%); /* icon captions */
+
+	/* ---- Typography ---------------------------------------------------- */
+	/* DM Sans and Caveat, self-hosted as variable woff2 in /assets/fonts and
+	   declared in fonts.css. Both confirmed against the live build. */
+	--dh-font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	--dh-font-script: "Caveat", "Segoe Script", "Bradley Hand", cursive;
+
+	--dh-body-size: 16px; /* document default; the block sizes its own text */
+
+	--dh-heading-size: 30px;
+	--dh-heading-lh: 35px;
+	--dh-heading-gap: 4px;
+	/* The heading's effect is weight contrast, so the two spans carry their
+	   own weight and tracking rather than inheriting one value. */
+	--dh-heading-lead-weight: 300;
+	--dh-heading-lead-tracking: -1px;
+	--dh-heading-mark-weight: 700;
+	--dh-heading-mark-tracking: -2px;
+
+	--dh-quote-size: 18px;
+	--dh-quote-lh: 22px;
+	--dh-quote-tracking: 0.03em; /* Figma: 3% */
+	--dh-quote-mark-w: 72px;
+
+	--dh-label-size: 16px;
+
+	/* The info-box label steps down on mobile; kept separate from the shared
+	   label token so the tab labels and CTA are not dragged with it. */
+	--dh-facts-label-size: 14px;
+	--dh-facts-label-lh: 20px;
+	--dh-facts-max-w: 457px;
+	--dh-facts-pad-x: 30px;
+	--dh-facts-item-w: 50px;
+	--dh-facts-caption-size: 11px;
+	--dh-facts-caption-lh: 16px;
+
+	/* Stat value: heavier and tighter on mobile, larger and looser on desktop.
+	   Figma gives the tracking as -2%; CSS has no percentage letter-spacing,
+	   so it is expressed in em against the font size. */
+	--dh-stat-size: 24px;
+	--dh-stat-lh: 34px;
+	--dh-stat-weight: 700;
+	--dh-stat-tracking: -0.02em;
+	/* Caption runs larger and lighter on mobile than on desktop. */
+	--dh-stat-caption-size: 14px;
+	--dh-stat-caption-lh: 18px;
+	--dh-stat-caption-weight: 300;
+
+
+	--dh-author-size: 20px;
+	--dh-author-lh: 22px;
+	--dh-author-role-size: 13px;
+	--dh-author-role-lh: 16px;
+
+	/* ---- Layout -------------------------------------------------------- */
+	--dh-container: 100%;
+	--dh-gutter: 20px;
+	--dh-section-py: 40px;
+	--dh-heading-mb: 40px;
+
+	--dh-card-padding: 24px;
+	--dh-radius-card: 20px;
+	--dh-radius-card-bl: 80px;
+	--dh-radius-box: 10px;
+	--dh-radius-pill: 999px;
+
+	--dh-tab-height: 87px; /* Figma: mobile active tab is 290 x 87 */
+	/* Mobile video: collapsed to 16:9 while the poster shows, expanding to the
+	   source's 9:16 portrait on play. */
+	--dh-video-collapsed: 56.25%;
+	--dh-video-expanded: 177.78%;
+	--dh-video-min-h-mobile: 178px;
+	--dh-tab-logo-h: 52px;    /* client logo inside a tab */
+	--dh-author-logo-h: 56px; /* client logo beside the author */
+	--dh-quote-author-gap: 24px;
+	--dh-video-width: 245px;  /* desktop video column */
+	--dh-video-min-h: 400px;  /* floor; taller posters keep their own height */
+	--dh-slide: 290px; /* mobile carousel slide width, tabs and panels alike */
+	--dh-accent-bar: 34px; /* the short mint rule under each box label */
+}
+
+@media (min-width: 1024px) {
+
+	/*
+	 * 1024–1279. The narrowest width that still runs the two-column desktop
+	 * layout, and the one with the least room: the container is fluid here,
+	 * not the 1240 it becomes at 1280. Everything is scaled down to match
+	 * rather than inheriting 1280's sizes and overflowing.
+	 */
+	:root {
+		--dh-heading-size: 32px;
+		--dh-heading-lh: 38px;
+		--dh-heading-gap: 16px;
+		--dh-heading-lead-weight: 200;
+		--dh-heading-lead-tracking: 1px;
+		--dh-heading-mark-weight: 800;
+		--dh-heading-mark-tracking: 1px;
+		--dh-card-padding: 30px;
+		--dh-tab-height: 72px;
+		--dh-tab-logo-h: 40px;
+		--dh-glow-size: 340px;
+		--dh-glow-blur: 140px;
+		--dh-video-width: 180px;
+		--dh-video-min-h: 320px;
+		--dh-facts-item-w: 56px;
+		--dh-facts-pad-x: 16px;
+		--dh-facts-label-size: 14px;
+		--dh-facts-label-lh: 20px;
+		--dh-facts-caption-size: 12px;
+		--dh-stats-gap: 14px;
+		--dh-quote-size: 17px;
+		--dh-quote-lh: 24px;
+		--dh-quote-tracking: 0;
+		--dh-quote-mark-w: 56px;
+		--dh-quote-author-gap: 24px;
+		--dh-author-size: 20px;
+		--dh-author-lh: 22px;
+		--dh-author-role-size: 11px;
+		--dh-author-role-lh: 15px;
+		--dh-author-logo-h: 40px;
+		--dh-stat-size: 24px;
+		--dh-stat-weight: 600;
+		--dh-stat-tracking: 0;
+		--dh-stat-caption-size: 12px;
+		--dh-stat-caption-lh: 15px;
+		--dh-stat-caption-weight: 400;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	/* 1280–1919: the container settles at 1240 and the laptop sizes apply. */
+	:root {
+		--dh-container: 1240px;
+		--dh-section-py: 60px;
+		--dh-heading-mb: 60px;
+		--dh-heading-size: 40px;
+		--dh-heading-lh: 45px;
+		--dh-heading-gap: 23px;
+		--dh-card-padding: 60px;
+		--dh-tab-height: 87px;
+		--dh-tab-logo-h: 52px;
+		--dh-glow-size: 432px;
+		--dh-glow-blur: 175px;
+		--dh-video-width: 223px;
+		--dh-video-min-h: 400px;
+		--dh-facts-item-w: 64px;
+		--dh-facts-pad-x: 20px;
+		--dh-facts-label-size: 16px;
+		--dh-facts-label-lh: 22px;
+		--dh-facts-caption-size: 13px;
+		--dh-stats-gap: 20px;
+		--dh-quote-size: 20px;
+		--dh-quote-lh: 28px;
+		--dh-quote-mark-w: 72px;
+		--dh-quote-author-gap: 42px;
+		--dh-author-size: 25px;
+		--dh-author-lh: 27px;
+		--dh-author-logo-h: 56px;
+		--dh-stat-size: 30px;
+		--dh-stat-caption-size: 13px;
+		--dh-stat-caption-lh: 16px;
+	}
+}
+
+@media (min-width: 1920px) {
+
+	:root {
+		--dh-container: 1600px;
+		--dh-section-py: 80px;
+		--dh-heading-mb: 80px;
+		--dh-heading-size: 50px;
+		--dh-heading-lh: 60px;
+		/* The comp's wide values, restored once the container reaches 1600. */
+		--dh-quote-size: 30px;
+		--dh-quote-lh: 42px;
+		--dh-quote-mark-w: 95px;
+		--dh-video-width: 245px;
+		--dh-facts-item-w: 68px;
+		--dh-facts-pad-x: 30px;
+		--dh-author-role-size: 18px;
+		--dh-author-role-lh: 24px;
+		--dh-stats-gap: 35px;
+	}
+}

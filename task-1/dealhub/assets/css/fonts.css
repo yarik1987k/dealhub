@@ -1,0 +1,33 @@
+/**
+ * Webfonts.
+ *
+ * DM Sans and Caveat, both SIL Open Font License 1.1, self-hosted rather than
+ * loaded from Google's CDN — no third-party request, no consent question, and
+ * one less DNS lookup on first paint.
+ *
+ * Both are variable fonts, so a single file covers every weight the design
+ * uses. Google's CSS API serves the same file once per requested weight; the
+ * duplicates were removed, taking the payload from 290KB to 116KB.
+ *
+ * Kept in its own stylesheet because the block editor canvas needs these
+ * declarations too, and it is loaded there through add_editor_style().
+ */
+
+@font-face {
+	font-family: "DM Sans";
+	src: url("../fonts/DMSans-Variable.woff2") format("woff2-variations");
+	/* Full variable axis. The design uses the extremes — 200 for the light
+	   part of the heading, 800 for the emphasised word — so a narrower range
+	   would get clamped and the contrast would flatten out. */
+	font-weight: 100 1000;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Caveat";
+	src: url("../fonts/Caveat-Variable.woff2") format("woff2-variations");
+	font-weight: 400 700;
+	font-style: normal;
+	font-display: swap;
+}
