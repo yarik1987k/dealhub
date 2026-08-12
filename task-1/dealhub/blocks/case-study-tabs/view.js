@@ -433,6 +433,24 @@
 		 */
 		var driver = null;
 
+		/*
+		 * Which scrollers currently have a finger on them. A tap is a
+		 * pointerdown with no scroll after it, so settle alone cannot tell us
+		 * the gesture is over — see releasePointer below.
+		 */
+		var pointerOn = new WeakSet();
+
+		/*
+		 * When each scroller last moved. A finger leaving the glass does not
+		 * end the gesture — momentum carries on — so the claim is only safe to
+		 * release once the scrolling has actually stopped.
+		 */
+		var lastScrollAt = new WeakMap();
+
+		function isScrolling( el ) {
+			return Date.now() - ( lastScrollAt.get( el ) || 0 ) < 150;
+		}
+
 		function otherOf( el ) {
 			return el === list ? panelScroller : list;
 		}
@@ -446,6 +464,15 @@
 				return;
 			}
 
+			/*
+			 * Restore the outgoing passive before switching. Handing the role
+			 * over directly — tap a card, then swipe the tabs — used to leave
+			 * the previous passive pinned at scroll-snap-type: none for the
+			 * rest of the session, because only clearDriver restored it and
+			 * clearDriver never ran for a gesture that did not scroll.
+			 */
+			restoreSnap();
+
 			driver = el;
 
 			// Snapping on the passive side would fight every value we write.
@@ -456,13 +483,17 @@
 			}
 		}
 
+		/** Give both scrollers their snapping back, whoever last gave it up. */
+		function restoreSnap() {
+			[ list, panelScroller ].forEach( function ( el ) {
+				if ( el ) {
+					el.style.scrollSnapType = '';
+				}
+			} );
+		}
+
 		function clearDriver() {
-			var passive = driver ? otherOf( driver ) : null;
-
-			if ( passive ) {
-				passive.style.scrollSnapType = '';
-			}
-
+			restoreSnap();
 			driver = null;
 		}
 
@@ -483,13 +514,36 @@
 		}
 
 		function handleScroll( el ) {
+			lastScrollAt.set( el, Date.now() );
+
 			if ( ! mobile.matches ) {
 				return;
 			}
 
-			// A scroll on the passive side is our own doing; ignore it.
+			/*
+			 * A scroll on the passive side is normally our own doing, so it is
+			 * ignored. But only while a finger is actually on the driver: a tap
+			 * claims the role and, with nothing to settle, never gives it back,
+			 * and the stale claim then swallowed every scroll from the other
+			 * carousel. Tapping play on a card and then swiping the tabs left
+			 * the tabs moving on their own with the cards frozen behind them.
+			 *
+			 * So: the element being scrolled wins unless the driver is still
+			 * under a finger.
+			 */
 			if ( driver && driver !== el ) {
-				return;
+				/*
+				 * Still under a finger, or still coasting on momentum after
+				 * one: the scroll we are seeing here is the passive side
+				 * echoing our own writes, so leave the roles alone. Flipping
+				 * them mid-flick is what made the two carousels fight in the
+				 * first place.
+				 */
+				if ( pointerOn.has( driver ) || isScrolling( driver ) ) {
+					return;
+				}
+
+				setDriver( el );
 			}
 
 			// Trackpads and scrollbars scroll without a pointerdown.
@@ -516,12 +570,30 @@
 			}
 
 			function claim() {
+				pointerOn.add( el );
 				releaseScrollSync();
 				setDriver( el );
 			}
 
+			/*
+			 * The gesture is over. If it never scrolled — a tap on play, on a
+			 * tab, anywhere — there will be no settle to release the claim, so
+			 * release it here.
+			 */
+			function releasePointer() {
+				pointerOn.delete( el );
+
+				if ( driver === el && ! isScrolling( el ) ) {
+					clearDriver();
+				}
+			}
+
 			el.addEventListener( 'pointerdown', claim, { passive: true } );
 			el.addEventListener( 'touchstart', claim, { passive: true } );
+			el.addEventListener( 'pointerup', releasePointer, { passive: true } );
+			el.addEventListener( 'pointercancel', releasePointer, { passive: true } );
+			el.addEventListener( 'touchend', releasePointer, { passive: true } );
+			el.addEventListener( 'touchcancel', releasePointer, { passive: true } );
 
 			el.addEventListener(
 				'scroll',
