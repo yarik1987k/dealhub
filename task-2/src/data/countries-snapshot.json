@@ -1,0 +1,6178 @@
+[
+  {
+    "code": "AFG",
+    "alpha2": "AF",
+    "name": "Afghanistan",
+    "officialName": "Islamic Republic of Afghanistan",
+    "nativeName": "افغانستان",
+    "flag": "🇦🇫",
+    "capital": [
+      "Kabul"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 41454761,
+    "timezones": [
+      "UTC+04:30"
+    ],
+    "currencies": [
+      {
+        "code": "AFN",
+        "name": "Afghan afghani",
+        "symbol": "؋"
+      }
+    ]
+  },
+  {
+    "code": "ALA",
+    "alpha2": "AX",
+    "name": "Åland Islands",
+    "officialName": "Åland Islands",
+    "nativeName": "Åland",
+    "flag": "🇦🇽",
+    "capital": [
+      "Mariehamn"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": null,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "ALB",
+    "alpha2": "AL",
+    "name": "Albania",
+    "officialName": "Republic of Albania",
+    "nativeName": "Shqipëria",
+    "flag": "🇦🇱",
+    "capital": [
+      "Tirana"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 2411658,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "ALL",
+        "name": "Albanian lek",
+        "symbol": "L"
+      }
+    ]
+  },
+  {
+    "code": "DZA",
+    "alpha2": "DZ",
+    "name": "Algeria",
+    "officialName": "People's Democratic Republic of Algeria",
+    "nativeName": "الجزائر",
+    "flag": "🇩🇿",
+    "capital": [
+      "Algiers"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 46164219,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "DZD",
+        "name": "Algerian dinar",
+        "symbol": "د.ج"
+      }
+    ]
+  },
+  {
+    "code": "ASM",
+    "alpha2": "AS",
+    "name": "American Samoa",
+    "officialName": "American Samoa",
+    "nativeName": "American Samoa",
+    "flag": "🇦🇸",
+    "capital": [
+      "Pago Pago"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 47521,
+    "timezones": [
+      "UTC-11:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "AND",
+    "alpha2": "AD",
+    "name": "Andorra",
+    "officialName": "Principality of Andorra",
+    "nativeName": "Andorra",
+    "flag": "🇦🇩",
+    "capital": [
+      "Andorra la Vella"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 80856,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "AGO",
+    "alpha2": "AO",
+    "name": "Angola",
+    "officialName": "Republic of Angola",
+    "nativeName": "Angola",
+    "flag": "🇦🇴",
+    "capital": [
+      "Luanda"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 36749906,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "AOA",
+        "name": "Angolan kwanza",
+        "symbol": "Kz"
+      }
+    ]
+  },
+  {
+    "code": "AIA",
+    "alpha2": "AI",
+    "name": "Anguilla",
+    "officialName": "Anguilla",
+    "nativeName": "Anguilla",
+    "flag": "🇦🇮",
+    "capital": [
+      "The Valley"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": null,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "ATA",
+    "alpha2": "AQ",
+    "name": "Antarctica",
+    "officialName": "Antarctica",
+    "nativeName": null,
+    "flag": "🇦🇶",
+    "capital": [
+      ""
+    ],
+    "region": "Antarctic",
+    "subregion": null,
+    "population": null,
+    "timezones": [
+      "UTC-03:00",
+      "UTC+00:00",
+      "UTC+03:00",
+      "UTC+05:00",
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+10:00",
+      "UTC+13:00"
+    ],
+    "currencies": []
+  },
+  {
+    "code": "ATG",
+    "alpha2": "AG",
+    "name": "Antigua and Barbuda",
+    "officialName": "Antigua and Barbuda",
+    "nativeName": "Antigua and Barbuda",
+    "flag": "🇦🇬",
+    "capital": [
+      "Saint John's"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 93316,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "ARG",
+    "alpha2": "AR",
+    "name": "Argentina",
+    "officialName": "Argentine Republic",
+    "nativeName": "Argentina",
+    "flag": "🇦🇷",
+    "capital": [
+      "Buenos Aires"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 45538401,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "ARS",
+        "name": "Argentine peso",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "ARM",
+    "alpha2": "AM",
+    "name": "Armenia",
+    "officialName": "Republic of Armenia",
+    "nativeName": "Հայաստան",
+    "flag": "🇦🇲",
+    "capital": [
+      "Yerevan"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 2964300,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "AMD",
+        "name": "Armenian dram",
+        "symbol": "֏"
+      }
+    ]
+  },
+  {
+    "code": "ABW",
+    "alpha2": "AW",
+    "name": "Aruba",
+    "officialName": "Aruba",
+    "nativeName": "Aruba",
+    "flag": "🇦🇼",
+    "capital": [
+      "Oranjestad"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 107359,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "AWG",
+        "name": "Aruban florin",
+        "symbol": "ƒ"
+      }
+    ]
+  },
+  {
+    "code": "AUS",
+    "alpha2": "AU",
+    "name": "Australia",
+    "officialName": "Commonwealth of Australia",
+    "nativeName": "Australia",
+    "flag": "🇦🇺",
+    "capital": [
+      "Canberra"
+    ],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "population": 26659922,
+    "timezones": [
+      "UTC+08:00",
+      "UTC+08:45",
+      "UTC+09:00",
+      "UTC+09:30",
+      "UTC+10:00",
+      "UTC+10:30",
+      "UTC+11:00"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "AUT",
+    "alpha2": "AT",
+    "name": "Austria",
+    "officialName": "Republic of Austria",
+    "nativeName": "Österreich",
+    "flag": "🇦🇹",
+    "capital": [
+      "Vienna"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 9131761,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "AZE",
+    "alpha2": "AZ",
+    "name": "Azerbaijan",
+    "officialName": "Republic of Azerbaijan",
+    "nativeName": "Azərbaycan",
+    "flag": "🇦🇿",
+    "capital": [
+      "Baku"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 10153958,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "AZN",
+        "name": "Azerbaijani manat",
+        "symbol": "₼"
+      }
+    ]
+  },
+  {
+    "code": "BHS",
+    "alpha2": "BS",
+    "name": "Bahamas",
+    "officialName": "Commonwealth of the Bahamas",
+    "nativeName": "Bahamas",
+    "flag": "🇧🇸",
+    "capital": [
+      "Nassau"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 399440,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "BSD",
+        "name": "Bahamian dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "BHR",
+    "alpha2": "BH",
+    "name": "Bahrain",
+    "officialName": "Kingdom of Bahrain",
+    "nativeName": "‏البحرين",
+    "flag": "🇧🇭",
+    "capital": [
+      "Manama"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 1577059,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "BHD",
+        "name": "Bahraini dinar",
+        "symbol": ".د.ب"
+      }
+    ]
+  },
+  {
+    "code": "BGD",
+    "alpha2": "BD",
+    "name": "Bangladesh",
+    "officialName": "People's Republic of Bangladesh",
+    "nativeName": "বাংলাদেশ",
+    "flag": "🇧🇩",
+    "capital": [
+      "Dhaka"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 171466990,
+    "timezones": [
+      "UTC+06:00"
+    ],
+    "currencies": [
+      {
+        "code": "BDT",
+        "name": "Bangladeshi taka",
+        "symbol": "৳"
+      }
+    ]
+  },
+  {
+    "code": "BRB",
+    "alpha2": "BB",
+    "name": "Barbados",
+    "officialName": "Barbados",
+    "nativeName": "Barbados",
+    "flag": "🇧🇧",
+    "capital": [
+      "Bridgetown"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 282336,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "BBD",
+        "name": "Barbadian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "BLR",
+    "alpha2": "BY",
+    "name": "Belarus",
+    "officialName": "Republic of Belarus",
+    "nativeName": "Белару́сь",
+    "flag": "🇧🇾",
+    "capital": [
+      "Minsk"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 9178298,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "BYN",
+        "name": "Belarusian ruble",
+        "symbol": "Br"
+      }
+    ]
+  },
+  {
+    "code": "BEL",
+    "alpha2": "BE",
+    "name": "Belgium",
+    "officialName": "Kingdom of Belgium",
+    "nativeName": "Belgien",
+    "flag": "🇧🇪",
+    "capital": [
+      "Brussels"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 11779946,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "BLZ",
+    "alpha2": "BZ",
+    "name": "Belize",
+    "officialName": "Belize",
+    "nativeName": "Belize",
+    "flag": "🇧🇿",
+    "capital": [
+      "Belmopan"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 411106,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "currencies": [
+      {
+        "code": "BZD",
+        "name": "Belize dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "BEN",
+    "alpha2": "BJ",
+    "name": "Benin",
+    "officialName": "Republic of Benin",
+    "nativeName": "Bénin",
+    "flag": "🇧🇯",
+    "capital": [
+      "Porto-Novo"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 14111034,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "BMU",
+    "alpha2": "BM",
+    "name": "Bermuda",
+    "officialName": "Bermuda",
+    "nativeName": "Bermuda",
+    "flag": "🇧🇲",
+    "capital": [
+      "Hamilton"
+    ],
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 64698,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "BMD",
+        "name": "Bermudian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "BTN",
+    "alpha2": "BT",
+    "name": "Bhutan",
+    "officialName": "Kingdom of Bhutan",
+    "nativeName": "འབྲུག་ཡུལ་",
+    "flag": "🇧🇹",
+    "capital": [
+      "Thimphu"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 786385,
+    "timezones": [
+      "UTC+06:00"
+    ],
+    "currencies": [
+      {
+        "code": "BTN",
+        "name": "Bhutanese ngultrum",
+        "symbol": "Nu."
+      },
+      {
+        "code": "INR",
+        "name": "Indian rupee",
+        "symbol": "₹"
+      }
+    ]
+  },
+  {
+    "code": "BOL",
+    "alpha2": "BO",
+    "name": "Bolivia",
+    "officialName": "Plurinational State of Bolivia",
+    "nativeName": "Wuliwya",
+    "flag": "🇧🇴",
+    "capital": [
+      "Sucre"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 12244159,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "BOB",
+        "name": "Bolivian boliviano",
+        "symbol": "Bs."
+      }
+    ]
+  },
+  {
+    "code": "BIH",
+    "alpha2": "BA",
+    "name": "Bosnia and Herzegovina",
+    "officialName": "Bosnia and Herzegovina",
+    "nativeName": "Bosna i Hercegovina",
+    "flag": "🇧🇦",
+    "capital": [
+      "Sarajevo"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 3185073,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "BAM",
+        "name": "Bosnia and Herzegovina convertible mark",
+        "symbol": ""
+      }
+    ]
+  },
+  {
+    "code": "BWA",
+    "alpha2": "BW",
+    "name": "Botswana",
+    "officialName": "Republic of Botswana",
+    "nativeName": "Botswana",
+    "flag": "🇧🇼",
+    "capital": [
+      "Gaborone"
+    ],
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "population": 2480244,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "BWP",
+        "name": "Botswana pula",
+        "symbol": "P"
+      }
+    ]
+  },
+  {
+    "code": "BVT",
+    "alpha2": "BV",
+    "name": "Bouvet Island",
+    "officialName": "Bouvet Island",
+    "nativeName": "Bouvetøya",
+    "flag": "🇧🇻",
+    "capital": [
+      ""
+    ],
+    "region": "Antarctic",
+    "subregion": null,
+    "population": null,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": []
+  },
+  {
+    "code": "BRA",
+    "alpha2": "BR",
+    "name": "Brazil",
+    "officialName": "Federative Republic of Brazil",
+    "nativeName": "Brasil",
+    "flag": "🇧🇷",
+    "capital": [
+      "Brasília"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 211140729,
+    "timezones": [
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC-03:00",
+      "UTC-02:00"
+    ],
+    "currencies": [
+      {
+        "code": "BRL",
+        "name": "Brazilian real",
+        "symbol": "R$"
+      }
+    ]
+  },
+  {
+    "code": "IOT",
+    "alpha2": "IO",
+    "name": "British Indian Ocean Territory",
+    "officialName": "British Indian Ocean Territory",
+    "nativeName": "British Indian Ocean Territory",
+    "flag": "🇮🇴",
+    "capital": [
+      "Diego Garcia"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": null,
+    "timezones": [
+      "UTC+06:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "VGB",
+    "alpha2": "VG",
+    "name": "British Virgin Islands",
+    "officialName": "Virgin Islands",
+    "nativeName": "British Virgin Islands",
+    "flag": "🇻🇬",
+    "capital": [
+      "Road Town"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 38985,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "BRN",
+    "alpha2": "BN",
+    "name": "Brunei",
+    "officialName": "Nation of Brunei, Abode of Peace",
+    "nativeName": "Negara Brunei Darussalam",
+    "flag": "🇧🇳",
+    "capital": [
+      "Bandar Seri Begawan"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 458949,
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "BND",
+        "name": "Brunei dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "SGD",
+        "name": "Singapore dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "BGR",
+    "alpha2": "BG",
+    "name": "Bulgaria",
+    "officialName": "Republic of Bulgaria",
+    "nativeName": "България",
+    "flag": "🇧🇬",
+    "capital": [
+      "Sofia"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 6446596,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "BGN",
+        "name": "Bulgarian lev",
+        "symbol": "лв"
+      }
+    ]
+  },
+  {
+    "code": "BFA",
+    "alpha2": "BF",
+    "name": "Burkina Faso",
+    "officialName": "Burkina Faso",
+    "nativeName": "Burkina Faso",
+    "flag": "🇧🇫",
+    "capital": [
+      "Ouagadougou"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 23025776,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "BDI",
+    "alpha2": "BI",
+    "name": "Burundi",
+    "officialName": "Republic of Burundi",
+    "nativeName": "Burundi",
+    "flag": "🇧🇮",
+    "capital": [
+      "Bujumbura"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 13689450,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "BIF",
+        "name": "Burundian franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "KHM",
+    "alpha2": "KH",
+    "name": "Cambodia",
+    "officialName": "Kingdom of Cambodia",
+    "nativeName": "Kâmpŭchéa",
+    "flag": "🇰🇭",
+    "capital": [
+      "Phnom Penh"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 17423880,
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "currencies": [
+      {
+        "code": "KHR",
+        "name": "Cambodian riel",
+        "symbol": "៛"
+      },
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CMR",
+    "alpha2": "CM",
+    "name": "Cameroon",
+    "officialName": "Republic of Cameroon",
+    "nativeName": "Cameroon",
+    "flag": "🇨🇲",
+    "capital": [
+      "Yaoundé"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 28372687,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "CAN",
+    "alpha2": "CA",
+    "name": "Canada",
+    "officialName": "Canada",
+    "nativeName": "Canada",
+    "flag": "🇨🇦",
+    "capital": [
+      "Ottawa"
+    ],
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 40049088,
+    "timezones": [
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00",
+      "UTC-04:00",
+      "UTC-03:30"
+    ],
+    "currencies": [
+      {
+        "code": "CAD",
+        "name": "Canadian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CPV",
+    "alpha2": "CV",
+    "name": "Cape Verde",
+    "officialName": "Republic of Cabo Verde",
+    "nativeName": "Cabo Verde",
+    "flag": "🇨🇻",
+    "capital": [
+      "Praia"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 522331,
+    "timezones": [
+      "UTC-01:00"
+    ],
+    "currencies": [
+      {
+        "code": "CVE",
+        "name": "Cape Verdean escudo",
+        "symbol": "Esc"
+      }
+    ]
+  },
+  {
+    "code": "BES",
+    "alpha2": "BQ",
+    "name": "Caribbean Netherlands",
+    "officialName": "Bonaire, Sint Eustatius and Saba",
+    "nativeName": "Caribisch Nederland",
+    "flag": "",
+    "capital": [],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": null,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CYM",
+    "alpha2": "KY",
+    "name": "Cayman Islands",
+    "officialName": "Cayman Islands",
+    "nativeName": "Cayman Islands",
+    "flag": "🇰🇾",
+    "capital": [
+      "George Town"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 73038,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "KYD",
+        "name": "Cayman Islands dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CAF",
+    "alpha2": "CF",
+    "name": "Central African Republic",
+    "officialName": "Central African Republic",
+    "nativeName": "République centrafricaine",
+    "flag": "🇨🇫",
+    "capital": [
+      "Bangui"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 5152421,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "TCD",
+    "alpha2": "TD",
+    "name": "Chad",
+    "officialName": "Republic of Chad",
+    "nativeName": "تشاد‎",
+    "flag": "🇹🇩",
+    "capital": [
+      "N'Djamena"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 19319064,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "CHL",
+    "alpha2": "CL",
+    "name": "Chile",
+    "officialName": "Republic of Chile",
+    "nativeName": "Chile",
+    "flag": "🇨🇱",
+    "capital": [
+      "Santiago"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 19658835,
+    "timezones": [
+      "UTC-05:00",
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "CLP",
+        "name": "Chilean peso",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CHN",
+    "alpha2": "CN",
+    "name": "China",
+    "officialName": "People's Republic of China",
+    "nativeName": "中国",
+    "flag": "🇨🇳",
+    "capital": [
+      "Beijing"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 1410710000,
+    "timezones": [
+      "UTC+06:00",
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "CNY",
+        "name": "Chinese yuan",
+        "symbol": "¥"
+      }
+    ]
+  },
+  {
+    "code": "CXR",
+    "alpha2": "CX",
+    "name": "Christmas Island",
+    "officialName": "Territory of Christmas Island",
+    "nativeName": "Christmas Island",
+    "flag": "🇨🇽",
+    "capital": [
+      "Flying Fish Cove"
+    ],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "population": null,
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CCK",
+    "alpha2": "CC",
+    "name": "Cocos (Keeling) Islands",
+    "officialName": "Territory of the Cocos (Keeling) Islands",
+    "nativeName": "Cocos (Keeling) Islands",
+    "flag": "🇨🇨",
+    "capital": [
+      "West Island"
+    ],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "population": null,
+    "timezones": [
+      "UTC+06:30"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "COL",
+    "alpha2": "CO",
+    "name": "Colombia",
+    "officialName": "Republic of Colombia",
+    "nativeName": "Colombia",
+    "flag": "🇨🇴",
+    "capital": [
+      "Bogotá"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 52321152,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "COP",
+        "name": "Colombian peso",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "COM",
+    "alpha2": "KM",
+    "name": "Comoros",
+    "officialName": "Union of the Comoros",
+    "nativeName": "القمر‎",
+    "flag": "🇰🇲",
+    "capital": [
+      "Moroni"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 850387,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "KMF",
+        "name": "Comorian franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "COK",
+    "alpha2": "CK",
+    "name": "Cook Islands",
+    "officialName": "Cook Islands",
+    "nativeName": "Cook Islands",
+    "flag": "🇨🇰",
+    "capital": [
+      "Avarua"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": null,
+    "timezones": [
+      "UTC-10:00"
+    ],
+    "currencies": [
+      {
+        "code": "CKD",
+        "name": "Cook Islands dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CRI",
+    "alpha2": "CR",
+    "name": "Costa Rica",
+    "officialName": "Republic of Costa Rica",
+    "nativeName": "Costa Rica",
+    "flag": "🇨🇷",
+    "capital": [
+      "San José"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 5105525,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "currencies": [
+      {
+        "code": "CRC",
+        "name": "Costa Rican colón",
+        "symbol": "₡"
+      }
+    ]
+  },
+  {
+    "code": "HRV",
+    "alpha2": "HR",
+    "name": "Croatia",
+    "officialName": "Republic of Croatia",
+    "nativeName": "Hrvatska",
+    "flag": "🇭🇷",
+    "capital": [
+      "Zagreb"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 3859686,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "HRK",
+        "name": "Croatian kuna",
+        "symbol": "kn"
+      }
+    ]
+  },
+  {
+    "code": "CUB",
+    "alpha2": "CU",
+    "name": "Cuba",
+    "officialName": "Republic of Cuba",
+    "nativeName": "Cuba",
+    "flag": "🇨🇺",
+    "capital": [
+      "Havana"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 11019931,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "CUC",
+        "name": "Cuban convertible peso",
+        "symbol": "$"
+      },
+      {
+        "code": "CUP",
+        "name": "Cuban peso",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "CUW",
+    "alpha2": "CW",
+    "name": "Curaçao",
+    "officialName": "Country of Curaçao",
+    "nativeName": "Curaçao",
+    "flag": "🇨🇼",
+    "capital": [
+      "Willemstad"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 154654,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "ANG",
+        "name": "Netherlands Antillean guilder",
+        "symbol": "ƒ"
+      }
+    ]
+  },
+  {
+    "code": "CYP",
+    "alpha2": "CY",
+    "name": "Cyprus",
+    "officialName": "Republic of Cyprus",
+    "nativeName": "Κύπρος",
+    "flag": "🇨🇾",
+    "capital": [
+      "Nicosia"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 1344976,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "CZE",
+    "alpha2": "CZ",
+    "name": "Czechia",
+    "officialName": "Czech Republic",
+    "nativeName": "Česko",
+    "flag": "🇨🇿",
+    "capital": [
+      "Prague"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 10864042,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "CZK",
+        "name": "Czech koruna",
+        "symbol": "Kč"
+      }
+    ]
+  },
+  {
+    "code": "DNK",
+    "alpha2": "DK",
+    "name": "Denmark",
+    "officialName": "Kingdom of Denmark",
+    "nativeName": "Danmark",
+    "flag": "🇩🇰",
+    "capital": [
+      "Copenhagen"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 5946952,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "DKK",
+        "name": "Danish krone",
+        "symbol": "kr"
+      }
+    ]
+  },
+  {
+    "code": "DJI",
+    "alpha2": "DJ",
+    "name": "Djibouti",
+    "officialName": "Republic of Djibouti",
+    "nativeName": "جيبوتي‎",
+    "flag": "🇩🇯",
+    "capital": [
+      "Djibouti"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 1152944,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "DJF",
+        "name": "Djiboutian franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "DMA",
+    "alpha2": "DM",
+    "name": "Dominica",
+    "officialName": "Commonwealth of Dominica",
+    "nativeName": "Dominica",
+    "flag": "🇩🇲",
+    "capital": [
+      "Roseau"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 66510,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "DOM",
+    "alpha2": "DO",
+    "name": "Dominican Republic",
+    "officialName": "Dominican Republic",
+    "nativeName": "República Dominicana",
+    "flag": "🇩🇴",
+    "capital": [
+      "Santo Domingo"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 11331265,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "DOP",
+        "name": "Dominican peso",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "COD",
+    "alpha2": "CD",
+    "name": "DR Congo",
+    "officialName": "Democratic Republic of the Congo",
+    "nativeName": "RD Congo",
+    "flag": "🇨🇩",
+    "capital": [
+      "Kinshasa"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 105789731,
+    "timezones": [
+      "UTC+01:00",
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "CDF",
+        "name": "Congolese franc",
+        "symbol": "FC"
+      }
+    ]
+  },
+  {
+    "code": "ECU",
+    "alpha2": "EC",
+    "name": "Ecuador",
+    "officialName": "Republic of Ecuador",
+    "nativeName": "Ecuador",
+    "flag": "🇪🇨",
+    "capital": [
+      "Quito"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 17980083,
+    "timezones": [
+      "UTC-06:00",
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "EGY",
+    "alpha2": "EG",
+    "name": "Egypt",
+    "officialName": "Arab Republic of Egypt",
+    "nativeName": "مصر",
+    "flag": "🇪🇬",
+    "capital": [
+      "Cairo"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 114535772,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EGP",
+        "name": "Egyptian pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "SLV",
+    "alpha2": "SV",
+    "name": "El Salvador",
+    "officialName": "Republic of El Salvador",
+    "nativeName": "El Salvador",
+    "flag": "🇸🇻",
+    "capital": [
+      "San Salvador"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 6309624,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "GNQ",
+    "alpha2": "GQ",
+    "name": "Equatorial Guinea",
+    "officialName": "Republic of Equatorial Guinea",
+    "nativeName": "Guinée équatoriale",
+    "flag": "🇬🇶",
+    "capital": [
+      "Malabo"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 1847549,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "ERI",
+    "alpha2": "ER",
+    "name": "Eritrea",
+    "officialName": "State of Eritrea",
+    "nativeName": "إرتريا‎",
+    "flag": "🇪🇷",
+    "capital": [
+      "Asmara"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 3470390,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "ERN",
+        "name": "Eritrean nakfa",
+        "symbol": "Nfk"
+      }
+    ]
+  },
+  {
+    "code": "EST",
+    "alpha2": "EE",
+    "name": "Estonia",
+    "officialName": "Republic of Estonia",
+    "nativeName": "Eesti",
+    "flag": "🇪🇪",
+    "capital": [
+      "Tallinn"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 1370286,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "SWZ",
+    "alpha2": "SZ",
+    "name": "Eswatini",
+    "officialName": "Kingdom of Eswatini",
+    "nativeName": "Eswatini",
+    "flag": "🇸🇿",
+    "capital": [
+      "Lobamba"
+    ],
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "population": 1230506,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "SZL",
+        "name": "Swazi lilangeni",
+        "symbol": "L"
+      }
+    ]
+  },
+  {
+    "code": "ETH",
+    "alpha2": "ET",
+    "name": "Ethiopia",
+    "officialName": "Federal Democratic Republic of Ethiopia",
+    "nativeName": "ኢትዮጵያ",
+    "flag": "🇪🇹",
+    "capital": [
+      "Addis Ababa"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 128691692,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "ETB",
+        "name": "Ethiopian birr",
+        "symbol": "Br"
+      }
+    ]
+  },
+  {
+    "code": "FLK",
+    "alpha2": "FK",
+    "name": "Falkland Islands",
+    "officialName": "Falkland Islands",
+    "nativeName": "Falkland Islands",
+    "flag": "🇫🇰",
+    "capital": [
+      "Stanley"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": null,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "FKP",
+        "name": "Falkland Islands pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "FRO",
+    "alpha2": "FO",
+    "name": "Faroe Islands",
+    "officialName": "Faroe Islands",
+    "nativeName": "Færøerne",
+    "flag": "🇫🇴",
+    "capital": [
+      "Tórshavn"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 54398,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "DKK",
+        "name": "Danish krone",
+        "symbol": "kr"
+      },
+      {
+        "code": "FOK",
+        "name": "Faroese króna",
+        "symbol": "kr"
+      }
+    ]
+  },
+  {
+    "code": "FJI",
+    "alpha2": "FJ",
+    "name": "Fiji",
+    "officialName": "Republic of Fiji",
+    "nativeName": "Fiji",
+    "flag": "🇫🇯",
+    "capital": [
+      "Suva"
+    ],
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "population": 924145,
+    "timezones": [
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "FJD",
+        "name": "Fijian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "FIN",
+    "alpha2": "FI",
+    "name": "Finland",
+    "officialName": "Republic of Finland",
+    "nativeName": "Suomi",
+    "flag": "🇫🇮",
+    "capital": [
+      "Helsinki"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 5583911,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "FRA",
+    "alpha2": "FR",
+    "name": "France",
+    "officialName": "French Republic",
+    "nativeName": "France",
+    "flag": "🇫🇷",
+    "capital": [
+      "Paris"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 68372286,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "GUF",
+    "alpha2": "GF",
+    "name": "French Guiana",
+    "officialName": "Guiana",
+    "nativeName": "Guyane française",
+    "flag": "🇬🇫",
+    "capital": [
+      "Cayenne"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": null,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "PYF",
+    "alpha2": "PF",
+    "name": "French Polynesia",
+    "officialName": "French Polynesia",
+    "nativeName": "Polynésie française",
+    "flag": "🇵🇫",
+    "capital": [
+      "Papeetē"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 281118,
+    "timezones": [
+      "UTC-10:00",
+      "UTC-09:30",
+      "UTC-09:00"
+    ],
+    "currencies": [
+      {
+        "code": "XPF",
+        "name": "CFP franc",
+        "symbol": "₣"
+      }
+    ]
+  },
+  {
+    "code": "ATF",
+    "alpha2": "TF",
+    "name": "French Southern and Antarctic Lands",
+    "officialName": "Territory of the French Southern and Antarctic Lands",
+    "nativeName": "Terres australes et antarctiques françaises",
+    "flag": "🇹🇫",
+    "capital": [
+      "Port-aux-Français"
+    ],
+    "region": "Antarctic",
+    "subregion": null,
+    "population": null,
+    "timezones": [
+      "UTC+04:00",
+      "UTC+05:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "GAB",
+    "alpha2": "GA",
+    "name": "Gabon",
+    "officialName": "Gabonese Republic",
+    "nativeName": "Gabon",
+    "flag": "🇬🇦",
+    "capital": [
+      "Libreville"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 2484789,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "GMB",
+    "alpha2": "GM",
+    "name": "Gambia",
+    "officialName": "Republic of the Gambia",
+    "nativeName": "Gambia",
+    "flag": "🇬🇲",
+    "capital": [
+      "Banjul"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 2697845,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GMD",
+        "name": "dalasi",
+        "symbol": "D"
+      }
+    ]
+  },
+  {
+    "code": "GEO",
+    "alpha2": "GE",
+    "name": "Georgia",
+    "officialName": "Georgia",
+    "nativeName": "საქართველო",
+    "flag": "🇬🇪",
+    "capital": [
+      "Tbilisi"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 3715483,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "GEL",
+        "name": "lari",
+        "symbol": "₾"
+      }
+    ]
+  },
+  {
+    "code": "DEU",
+    "alpha2": "DE",
+    "name": "Germany",
+    "officialName": "Federal Republic of Germany",
+    "nativeName": "Deutschland",
+    "flag": "🇩🇪",
+    "capital": [
+      "Berlin"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 83287273,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "GHA",
+    "alpha2": "GH",
+    "name": "Ghana",
+    "officialName": "Republic of Ghana",
+    "nativeName": "Ghana",
+    "flag": "🇬🇭",
+    "capital": [
+      "Accra"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 33787914,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GHS",
+        "name": "Ghanaian cedi",
+        "symbol": "₵"
+      }
+    ]
+  },
+  {
+    "code": "GIB",
+    "alpha2": "GI",
+    "name": "Gibraltar",
+    "officialName": "Gibraltar",
+    "nativeName": "Gibraltar",
+    "flag": "🇬🇮",
+    "capital": [
+      "Gibraltar"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 38471,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "GIP",
+        "name": "Gibraltar pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "GRC",
+    "alpha2": "GR",
+    "name": "Greece",
+    "officialName": "Hellenic Republic",
+    "nativeName": "Ελλάδα",
+    "flag": "🇬🇷",
+    "capital": [
+      "Athens"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 10407351,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "GRL",
+    "alpha2": "GL",
+    "name": "Greenland",
+    "officialName": "Greenland",
+    "nativeName": "Kalaallit Nunaat",
+    "flag": "🇬🇱",
+    "capital": [
+      "Nuuk"
+    ],
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 56865,
+    "timezones": [
+      "UTC-04:00",
+      "UTC-02:00",
+      "UTC-01:00",
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "DKK",
+        "name": "krone",
+        "symbol": "kr."
+      }
+    ]
+  },
+  {
+    "code": "GRD",
+    "alpha2": "GD",
+    "name": "Grenada",
+    "officialName": "Grenada",
+    "nativeName": "Grenada",
+    "flag": "🇬🇩",
+    "capital": [
+      "St. George's"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 117081,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "GLP",
+    "alpha2": "GP",
+    "name": "Guadeloupe",
+    "officialName": "Guadeloupe",
+    "nativeName": "Guadeloupe",
+    "flag": "🇬🇵",
+    "capital": [
+      "Basse-Terre"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": null,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "GUM",
+    "alpha2": "GU",
+    "name": "Guam",
+    "officialName": "Guam",
+    "nativeName": "Guåhån",
+    "flag": "🇬🇺",
+    "capital": [
+      "Hagåtña"
+    ],
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "population": 166506,
+    "timezones": [
+      "UTC+10:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "GTM",
+    "alpha2": "GT",
+    "name": "Guatemala",
+    "officialName": "Republic of Guatemala",
+    "nativeName": "Guatemala",
+    "flag": "🇬🇹",
+    "capital": [
+      "Guatemala City"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 18124838,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "currencies": [
+      {
+        "code": "GTQ",
+        "name": "Guatemalan quetzal",
+        "symbol": "Q"
+      }
+    ]
+  },
+  {
+    "code": "GGY",
+    "alpha2": "GG",
+    "name": "Guernsey",
+    "officialName": "Bailiwick of Guernsey",
+    "nativeName": "Guernsey",
+    "flag": "🇬🇬",
+    "capital": [
+      "St. Peter Port"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": null,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GBP",
+        "name": "British pound",
+        "symbol": "£"
+      },
+      {
+        "code": "GGP",
+        "name": "Guernsey pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "GIN",
+    "alpha2": "GN",
+    "name": "Guinea",
+    "officialName": "Republic of Guinea",
+    "nativeName": "Guinée",
+    "flag": "🇬🇳",
+    "capital": [
+      "Conakry"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 14405468,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GNF",
+        "name": "Guinean franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "GNB",
+    "alpha2": "GW",
+    "name": "Guinea-Bissau",
+    "officialName": "Republic of Guinea-Bissau",
+    "nativeName": "Guiné-Bissau",
+    "flag": "🇬🇼",
+    "capital": [
+      "Bissau"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 2153339,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "GUY",
+    "alpha2": "GY",
+    "name": "Guyana",
+    "officialName": "Co-operative Republic of Guyana",
+    "nativeName": "Guyana",
+    "flag": "🇬🇾",
+    "capital": [
+      "Georgetown"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 826353,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "GYD",
+        "name": "Guyanese dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "HTI",
+    "alpha2": "HT",
+    "name": "Haiti",
+    "officialName": "Republic of Haiti",
+    "nativeName": "Haïti",
+    "flag": "🇭🇹",
+    "capital": [
+      "Port-au-Prince"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 11637398,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "HTG",
+        "name": "Haitian gourde",
+        "symbol": "G"
+      }
+    ]
+  },
+  {
+    "code": "HMD",
+    "alpha2": "HM",
+    "name": "Heard Island and McDonald Islands",
+    "officialName": "Heard Island and McDonald Islands",
+    "nativeName": "Heard Island and McDonald Islands",
+    "flag": "🇭🇲",
+    "capital": [
+      ""
+    ],
+    "region": "Antarctic",
+    "subregion": null,
+    "population": null,
+    "timezones": [],
+    "currencies": []
+  },
+  {
+    "code": "HND",
+    "alpha2": "HN",
+    "name": "Honduras",
+    "officialName": "Republic of Honduras",
+    "nativeName": "Honduras",
+    "flag": "🇭🇳",
+    "capital": [
+      "Tegucigalpa"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 10644851,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "currencies": [
+      {
+        "code": "HNL",
+        "name": "Honduran lempira",
+        "symbol": "L"
+      }
+    ]
+  },
+  {
+    "code": "HKG",
+    "alpha2": "HK",
+    "name": "Hong Kong",
+    "officialName": "Hong Kong Special Administrative Region of the People's Republic of China",
+    "nativeName": "Hong Kong",
+    "flag": "🇭🇰",
+    "capital": [
+      "City of Victoria"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 7536100,
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "HKD",
+        "name": "Hong Kong dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "HUN",
+    "alpha2": "HU",
+    "name": "Hungary",
+    "officialName": "Hungary",
+    "nativeName": "Magyarország",
+    "flag": "🇭🇺",
+    "capital": [
+      "Budapest"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 9592186,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "HUF",
+        "name": "Hungarian forint",
+        "symbol": "Ft"
+      }
+    ]
+  },
+  {
+    "code": "ISL",
+    "alpha2": "IS",
+    "name": "Iceland",
+    "officialName": "Iceland",
+    "nativeName": "Ísland",
+    "flag": "🇮🇸",
+    "capital": [
+      "Reykjavik"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 385663,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "ISK",
+        "name": "Icelandic króna",
+        "symbol": "kr"
+      }
+    ]
+  },
+  {
+    "code": "IND",
+    "alpha2": "IN",
+    "name": "India",
+    "officialName": "Republic of India",
+    "nativeName": "India",
+    "flag": "🇮🇳",
+    "capital": [
+      "New Delhi"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 1438069596,
+    "timezones": [
+      "UTC+05:30"
+    ],
+    "currencies": [
+      {
+        "code": "INR",
+        "name": "Indian rupee",
+        "symbol": "₹"
+      }
+    ]
+  },
+  {
+    "code": "IDN",
+    "alpha2": "ID",
+    "name": "Indonesia",
+    "officialName": "Republic of Indonesia",
+    "nativeName": "Indonesia",
+    "flag": "🇮🇩",
+    "capital": [
+      "Jakarta"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 281190067,
+    "timezones": [
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+09:00"
+    ],
+    "currencies": [
+      {
+        "code": "IDR",
+        "name": "Indonesian rupiah",
+        "symbol": "Rp"
+      }
+    ]
+  },
+  {
+    "code": "IRN",
+    "alpha2": "IR",
+    "name": "Iran",
+    "officialName": "Islamic Republic of Iran",
+    "nativeName": "ایران",
+    "flag": "🇮🇷",
+    "capital": [
+      "Tehran"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 90608707,
+    "timezones": [
+      "UTC+03:30"
+    ],
+    "currencies": [
+      {
+        "code": "IRR",
+        "name": "Iranian rial",
+        "symbol": "﷼"
+      }
+    ]
+  },
+  {
+    "code": "IRQ",
+    "alpha2": "IQ",
+    "name": "Iraq",
+    "officialName": "Republic of Iraq",
+    "nativeName": "العراق",
+    "flag": "🇮🇶",
+    "capital": [
+      "Baghdad"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 45074049,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "IQD",
+        "name": "Iraqi dinar",
+        "symbol": "ع.د"
+      }
+    ]
+  },
+  {
+    "code": "IRL",
+    "alpha2": "IE",
+    "name": "Ireland",
+    "officialName": "Republic of Ireland",
+    "nativeName": "Ireland",
+    "flag": "🇮🇪",
+    "capital": [
+      "Dublin"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 5311538,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "IMN",
+    "alpha2": "IM",
+    "name": "Isle of Man",
+    "officialName": "Isle of Man",
+    "nativeName": "Isle of Man",
+    "flag": "🇮🇲",
+    "capital": [
+      "Douglas"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 84165,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GBP",
+        "name": "British pound",
+        "symbol": "£"
+      },
+      {
+        "code": "IMP",
+        "name": "Manx pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "ISR",
+    "alpha2": "IL",
+    "name": "Israel",
+    "officialName": "State of Israel",
+    "nativeName": "إسرائيل",
+    "flag": "🇮🇱",
+    "capital": [
+      "Jerusalem"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 9849000,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "ILS",
+        "name": "Israeli new shekel",
+        "symbol": "₪"
+      }
+    ]
+  },
+  {
+    "code": "ITA",
+    "alpha2": "IT",
+    "name": "Italy",
+    "officialName": "Italian Republic",
+    "nativeName": "Italia",
+    "flag": "🇮🇹",
+    "capital": [
+      "Rome"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 58984216,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "CIV",
+    "alpha2": "CI",
+    "name": "Ivory Coast",
+    "officialName": "Republic of Côte d'Ivoire",
+    "nativeName": "Côte d'Ivoire",
+    "flag": "🇨🇮",
+    "capital": [
+      "Yamoussoukro"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 31165654,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "JAM",
+    "alpha2": "JM",
+    "name": "Jamaica",
+    "officialName": "Jamaica",
+    "nativeName": "Jamaica",
+    "flag": "🇯🇲",
+    "capital": [
+      "Kingston"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 2839786,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "JMD",
+        "name": "Jamaican dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "JPN",
+    "alpha2": "JP",
+    "name": "Japan",
+    "officialName": "Japan",
+    "nativeName": "日本",
+    "flag": "🇯🇵",
+    "capital": [
+      "Tokyo"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 124516650,
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "currencies": [
+      {
+        "code": "JPY",
+        "name": "Japanese yen",
+        "symbol": "¥"
+      }
+    ]
+  },
+  {
+    "code": "JEY",
+    "alpha2": "JE",
+    "name": "Jersey",
+    "officialName": "Bailiwick of Jersey",
+    "nativeName": "Jersey",
+    "flag": "🇯🇪",
+    "capital": [
+      "Saint Helier"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": null,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GBP",
+        "name": "British pound",
+        "symbol": "£"
+      },
+      {
+        "code": "JEP",
+        "name": "Jersey pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "JOR",
+    "alpha2": "JO",
+    "name": "Jordan",
+    "officialName": "Hashemite Kingdom of Jordan",
+    "nativeName": "الأردن",
+    "flag": "🇯🇴",
+    "capital": [
+      "Amman"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 11439213,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "JOD",
+        "name": "Jordanian dinar",
+        "symbol": "د.ا"
+      }
+    ]
+  },
+  {
+    "code": "KAZ",
+    "alpha2": "KZ",
+    "name": "Kazakhstan",
+    "officialName": "Republic of Kazakhstan",
+    "nativeName": "Қазақстан",
+    "flag": "🇰🇿",
+    "capital": [
+      "Astana"
+    ],
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 20330104,
+    "timezones": [
+      "UTC+05:00",
+      "UTC+06:00"
+    ],
+    "currencies": [
+      {
+        "code": "KZT",
+        "name": "Kazakhstani tenge",
+        "symbol": "₸"
+      }
+    ]
+  },
+  {
+    "code": "KEN",
+    "alpha2": "KE",
+    "name": "Kenya",
+    "officialName": "Republic of Kenya",
+    "nativeName": "Kenya",
+    "flag": "🇰🇪",
+    "capital": [
+      "Nairobi"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 55339003,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "KES",
+        "name": "Kenyan shilling",
+        "symbol": "Sh"
+      }
+    ]
+  },
+  {
+    "code": "KIR",
+    "alpha2": "KI",
+    "name": "Kiribati",
+    "officialName": "Independent and Sovereign Republic of Kiribati",
+    "nativeName": "Kiribati",
+    "flag": "🇰🇮",
+    "capital": [
+      "South Tarawa"
+    ],
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "population": 132530,
+    "timezones": [
+      "UTC+12:00",
+      "UTC+13:00",
+      "UTC+14:00"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "KID",
+        "name": "Kiribati dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "UNK",
+    "alpha2": "XK",
+    "name": "Kosovo",
+    "officialName": "Republic of Kosovo",
+    "nativeName": "Kosova",
+    "flag": "🇽🇰",
+    "capital": [
+      "Pristina"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": null,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "KWT",
+    "alpha2": "KW",
+    "name": "Kuwait",
+    "officialName": "State of Kuwait",
+    "nativeName": "الكويت",
+    "flag": "🇰🇼",
+    "capital": [
+      "Kuwait City"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 4853420,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "KWD",
+        "name": "Kuwaiti dinar",
+        "symbol": "د.ك"
+      }
+    ]
+  },
+  {
+    "code": "KGZ",
+    "alpha2": "KG",
+    "name": "Kyrgyzstan",
+    "officialName": "Kyrgyz Republic",
+    "nativeName": "Кыргызстан",
+    "flag": "🇰🇬",
+    "capital": [
+      "Bishkek"
+    ],
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 7099750,
+    "timezones": [
+      "UTC+06:00"
+    ],
+    "currencies": [
+      {
+        "code": "KGS",
+        "name": "Kyrgyzstani som",
+        "symbol": "с"
+      }
+    ]
+  },
+  {
+    "code": "LAO",
+    "alpha2": "LA",
+    "name": "Laos",
+    "officialName": "Lao People's Democratic Republic",
+    "nativeName": "ສປປລາວ",
+    "flag": "🇱🇦",
+    "capital": [
+      "Vientiane"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 7664993,
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "currencies": [
+      {
+        "code": "LAK",
+        "name": "Lao kip",
+        "symbol": "₭"
+      }
+    ]
+  },
+  {
+    "code": "LVA",
+    "alpha2": "LV",
+    "name": "Latvia",
+    "officialName": "Republic of Latvia",
+    "nativeName": "Latvija",
+    "flag": "🇱🇻",
+    "capital": [
+      "Riga"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 1883710,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "LBN",
+    "alpha2": "LB",
+    "name": "Lebanon",
+    "officialName": "Lebanese Republic",
+    "nativeName": "لبنان",
+    "flag": "🇱🇧",
+    "capital": [
+      "Beirut"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 5773493,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "LBP",
+        "name": "Lebanese pound",
+        "symbol": "ل.ل"
+      }
+    ]
+  },
+  {
+    "code": "LSO",
+    "alpha2": "LS",
+    "name": "Lesotho",
+    "officialName": "Kingdom of Lesotho",
+    "nativeName": "Lesotho",
+    "flag": "🇱🇸",
+    "capital": [
+      "Maseru"
+    ],
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "population": 2311472,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "LSL",
+        "name": "Lesotho loti",
+        "symbol": "L"
+      },
+      {
+        "code": "ZAR",
+        "name": "South African rand",
+        "symbol": "R"
+      }
+    ]
+  },
+  {
+    "code": "LBR",
+    "alpha2": "LR",
+    "name": "Liberia",
+    "officialName": "Republic of Liberia",
+    "nativeName": "Liberia",
+    "flag": "🇱🇷",
+    "capital": [
+      "Monrovia"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 5493031,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "LRD",
+        "name": "Liberian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "LBY",
+    "alpha2": "LY",
+    "name": "Libya",
+    "officialName": "State of Libya",
+    "nativeName": "‏ليبيا",
+    "flag": "🇱🇾",
+    "capital": [
+      "Tripoli"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 7305659,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "LYD",
+        "name": "Libyan dinar",
+        "symbol": "ل.د"
+      }
+    ]
+  },
+  {
+    "code": "LIE",
+    "alpha2": "LI",
+    "name": "Liechtenstein",
+    "officialName": "Principality of Liechtenstein",
+    "nativeName": "Liechtenstein",
+    "flag": "🇱🇮",
+    "capital": [
+      "Vaduz"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 39846,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "CHF",
+        "name": "Swiss franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "LTU",
+    "alpha2": "LT",
+    "name": "Lithuania",
+    "officialName": "Republic of Lithuania",
+    "nativeName": "Lietuva",
+    "flag": "🇱🇹",
+    "capital": [
+      "Vilnius"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 2871585,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "LUX",
+    "alpha2": "LU",
+    "name": "Luxembourg",
+    "officialName": "Grand Duchy of Luxembourg",
+    "nativeName": "Luxemburg",
+    "flag": "🇱🇺",
+    "capital": [
+      "Luxembourg"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 666430,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "MAC",
+    "alpha2": "MO",
+    "name": "Macau",
+    "officialName": "Macao Special Administrative Region of the People's Republic of China",
+    "nativeName": "Macau",
+    "flag": "🇲🇴",
+    "capital": [
+      ""
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 678800,
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "MOP",
+        "name": "Macanese pataca",
+        "symbol": "P"
+      }
+    ]
+  },
+  {
+    "code": "MDG",
+    "alpha2": "MG",
+    "name": "Madagascar",
+    "officialName": "Republic of Madagascar",
+    "nativeName": "Madagascar",
+    "flag": "🇲🇬",
+    "capital": [
+      "Antananarivo"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 31195932,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "MGA",
+        "name": "Malagasy ariary",
+        "symbol": "Ar"
+      }
+    ]
+  },
+  {
+    "code": "MWI",
+    "alpha2": "MW",
+    "name": "Malawi",
+    "officialName": "Republic of Malawi",
+    "nativeName": "Malawi",
+    "flag": "🇲🇼",
+    "capital": [
+      "Lilongwe"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 21104482,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "MWK",
+        "name": "Malawian kwacha",
+        "symbol": "MK"
+      }
+    ]
+  },
+  {
+    "code": "MYS",
+    "alpha2": "MY",
+    "name": "Malaysia",
+    "officialName": "Malaysia",
+    "nativeName": "Malaysia",
+    "flag": "🇲🇾",
+    "capital": [
+      "Kuala Lumpur"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 35126298,
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "MYR",
+        "name": "Malaysian ringgit",
+        "symbol": "RM"
+      }
+    ]
+  },
+  {
+    "code": "MDV",
+    "alpha2": "MV",
+    "name": "Maldives",
+    "officialName": "Republic of the Maldives",
+    "nativeName": "ދިވެހިރާއްޖޭގެ",
+    "flag": "🇲🇻",
+    "capital": [
+      "Malé"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 525994,
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "currencies": [
+      {
+        "code": "MVR",
+        "name": "Maldivian rufiyaa",
+        "symbol": ".ރ"
+      }
+    ]
+  },
+  {
+    "code": "MLI",
+    "alpha2": "ML",
+    "name": "Mali",
+    "officialName": "Republic of Mali",
+    "nativeName": "Mali",
+    "flag": "🇲🇱",
+    "capital": [
+      "Bamako"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 23769127,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "MLT",
+    "alpha2": "MT",
+    "name": "Malta",
+    "officialName": "Republic of Malta",
+    "nativeName": "Malta",
+    "flag": "🇲🇹",
+    "capital": [
+      "Valletta"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 552747,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "MHL",
+    "alpha2": "MH",
+    "name": "Marshall Islands",
+    "officialName": "Republic of the Marshall Islands",
+    "nativeName": "Marshall Islands",
+    "flag": "🇲🇭",
+    "capital": [
+      "Majuro"
+    ],
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "population": 38827,
+    "timezones": [
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "MTQ",
+    "alpha2": "MQ",
+    "name": "Martinique",
+    "officialName": "Martinique",
+    "nativeName": "Martinique",
+    "flag": "🇲🇶",
+    "capital": [
+      "Fort-de-France"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": null,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "MRT",
+    "alpha2": "MR",
+    "name": "Mauritania",
+    "officialName": "Islamic Republic of Mauritania",
+    "nativeName": "موريتانيا",
+    "flag": "🇲🇷",
+    "capital": [
+      "Nouakchott"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 5022441,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "MRU",
+        "name": "Mauritanian ouguiya",
+        "symbol": "UM"
+      }
+    ]
+  },
+  {
+    "code": "MUS",
+    "alpha2": "MU",
+    "name": "Mauritius",
+    "officialName": "Republic of Mauritius",
+    "nativeName": "Mauritius",
+    "flag": "🇲🇺",
+    "capital": [
+      "Port Louis"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 1248647,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "MUR",
+        "name": "Mauritian rupee",
+        "symbol": "₨"
+      }
+    ]
+  },
+  {
+    "code": "MYT",
+    "alpha2": "YT",
+    "name": "Mayotte",
+    "officialName": "Department of Mayotte",
+    "nativeName": "Mayotte",
+    "flag": "🇾🇹",
+    "capital": [
+      "Mamoudzou"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": null,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "MEX",
+    "alpha2": "MX",
+    "name": "Mexico",
+    "officialName": "United Mexican States",
+    "nativeName": "México",
+    "flag": "🇲🇽",
+    "capital": [
+      "Mexico City"
+    ],
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 129739759,
+    "timezones": [
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "MXN",
+        "name": "Mexican peso",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "FSM",
+    "alpha2": "FM",
+    "name": "Micronesia",
+    "officialName": "Federated States of Micronesia",
+    "nativeName": "Micronesia",
+    "flag": "🇫🇲",
+    "capital": [
+      "Palikir"
+    ],
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "population": 112630,
+    "timezones": [
+      "UTC+10:00",
+      "UTC+11:00"
+    ],
+    "currencies": []
+  },
+  {
+    "code": "MDA",
+    "alpha2": "MD",
+    "name": "Moldova",
+    "officialName": "Republic of Moldova",
+    "nativeName": "Moldova",
+    "flag": "🇲🇩",
+    "capital": [
+      "Chișinău"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 2457783,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "MDL",
+        "name": "Moldovan leu",
+        "symbol": "L"
+      }
+    ]
+  },
+  {
+    "code": "MCO",
+    "alpha2": "MC",
+    "name": "Monaco",
+    "officialName": "Principality of Monaco",
+    "nativeName": "Monaco",
+    "flag": "🇲🇨",
+    "capital": [
+      "Monaco"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 38956,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "MNG",
+    "alpha2": "MN",
+    "name": "Mongolia",
+    "officialName": "Mongolia",
+    "nativeName": "Монгол улс",
+    "flag": "🇲🇳",
+    "capital": [
+      "Ulan Bator"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 3481145,
+    "timezones": [
+      "UTC+07:00",
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "MNT",
+        "name": "Mongolian tögrög",
+        "symbol": "₮"
+      }
+    ]
+  },
+  {
+    "code": "MNE",
+    "alpha2": "ME",
+    "name": "Montenegro",
+    "officialName": "Montenegro",
+    "nativeName": "Црна Гора",
+    "flag": "🇲🇪",
+    "capital": [
+      "Podgorica"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 623529,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "MSR",
+    "alpha2": "MS",
+    "name": "Montserrat",
+    "officialName": "Montserrat",
+    "nativeName": "Montserrat",
+    "flag": "🇲🇸",
+    "capital": [
+      "Plymouth"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": null,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "MAR",
+    "alpha2": "MA",
+    "name": "Morocco",
+    "officialName": "Kingdom of Morocco",
+    "nativeName": "المغرب",
+    "flag": "🇲🇦",
+    "capital": [
+      "Rabat"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 37712505,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "MAD",
+        "name": "Moroccan dirham",
+        "symbol": "د.م."
+      }
+    ]
+  },
+  {
+    "code": "MOZ",
+    "alpha2": "MZ",
+    "name": "Mozambique",
+    "officialName": "Republic of Mozambique",
+    "nativeName": "Moçambique",
+    "flag": "🇲🇿",
+    "capital": [
+      "Maputo"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 33635160,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "MZN",
+        "name": "Mozambican metical",
+        "symbol": "MT"
+      }
+    ]
+  },
+  {
+    "code": "MMR",
+    "alpha2": "MM",
+    "name": "Myanmar",
+    "officialName": "Republic of the Union of Myanmar",
+    "nativeName": "မြန်မာ",
+    "flag": "🇲🇲",
+    "capital": [
+      "Naypyidaw"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 54133798,
+    "timezones": [
+      "UTC+06:30"
+    ],
+    "currencies": [
+      {
+        "code": "MMK",
+        "name": "Burmese kyat",
+        "symbol": "Ks"
+      }
+    ]
+  },
+  {
+    "code": "NAM",
+    "alpha2": "NA",
+    "name": "Namibia",
+    "officialName": "Republic of Namibia",
+    "nativeName": "Namibië",
+    "flag": "🇳🇦",
+    "capital": [
+      "Windhoek"
+    ],
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "population": 2963095,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "NAD",
+        "name": "Namibian dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "ZAR",
+        "name": "South African rand",
+        "symbol": "R"
+      }
+    ]
+  },
+  {
+    "code": "NRU",
+    "alpha2": "NR",
+    "name": "Nauru",
+    "officialName": "Republic of Nauru",
+    "nativeName": "Nauru",
+    "flag": "🇳🇷",
+    "capital": [
+      "Yaren"
+    ],
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "population": 11875,
+    "timezones": [
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "NPL",
+    "alpha2": "NP",
+    "name": "Nepal",
+    "officialName": "Federal Democratic Republic of Nepal",
+    "nativeName": "नेपाल",
+    "flag": "🇳🇵",
+    "capital": [
+      "Kathmandu"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 29694614,
+    "timezones": [
+      "UTC+05:45"
+    ],
+    "currencies": [
+      {
+        "code": "NPR",
+        "name": "Nepalese rupee",
+        "symbol": "₨"
+      }
+    ]
+  },
+  {
+    "code": "NLD",
+    "alpha2": "NL",
+    "name": "Netherlands",
+    "officialName": "Kingdom of the Netherlands",
+    "nativeName": "Nederland",
+    "flag": "🇳🇱",
+    "capital": [
+      "Amsterdam"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 17877117,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "NCL",
+    "alpha2": "NC",
+    "name": "New Caledonia",
+    "officialName": "New Caledonia",
+    "nativeName": "Nouvelle-Calédonie",
+    "flag": "🇳🇨",
+    "capital": [
+      "Nouméa"
+    ],
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "population": 289870,
+    "timezones": [
+      "UTC+11:00"
+    ],
+    "currencies": [
+      {
+        "code": "XPF",
+        "name": "CFP franc",
+        "symbol": "₣"
+      }
+    ]
+  },
+  {
+    "code": "NZL",
+    "alpha2": "NZ",
+    "name": "New Zealand",
+    "officialName": "New Zealand",
+    "nativeName": "New Zealand",
+    "flag": "🇳🇿",
+    "capital": [
+      "Wellington"
+    ],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "population": 5200000,
+    "timezones": [
+      "UTC+13:00",
+      "UTC+13:45"
+    ],
+    "currencies": [
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "NIC",
+    "alpha2": "NI",
+    "name": "Nicaragua",
+    "officialName": "Republic of Nicaragua",
+    "nativeName": "Nicaragua",
+    "flag": "🇳🇮",
+    "capital": [
+      "Managua"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 6823613,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "currencies": [
+      {
+        "code": "NIO",
+        "name": "Nicaraguan córdoba",
+        "symbol": "C$"
+      }
+    ]
+  },
+  {
+    "code": "NER",
+    "alpha2": "NE",
+    "name": "Niger",
+    "officialName": "Republic of Niger",
+    "nativeName": "Niger",
+    "flag": "🇳🇪",
+    "capital": [
+      "Niamey"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 26159867,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "NGA",
+    "alpha2": "NG",
+    "name": "Nigeria",
+    "officialName": "Federal Republic of Nigeria",
+    "nativeName": "Nigeria",
+    "flag": "🇳🇬",
+    "capital": [
+      "Abuja"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 227882945,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "NGN",
+        "name": "Nigerian naira",
+        "symbol": "₦"
+      }
+    ]
+  },
+  {
+    "code": "NIU",
+    "alpha2": "NU",
+    "name": "Niue",
+    "officialName": "Niue",
+    "nativeName": "Niue",
+    "flag": "🇳🇺",
+    "capital": [
+      "Alofi"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": null,
+    "timezones": [
+      "UTC-11:00"
+    ],
+    "currencies": [
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "NFK",
+    "alpha2": "NF",
+    "name": "Norfolk Island",
+    "officialName": "Territory of Norfolk Island",
+    "nativeName": "Norfolk Island",
+    "flag": "🇳🇫",
+    "capital": [
+      "Kingston"
+    ],
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "population": null,
+    "timezones": [
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "PRK",
+    "alpha2": "KP",
+    "name": "North Korea",
+    "officialName": "Democratic People's Republic of Korea",
+    "nativeName": "조선",
+    "flag": "🇰🇵",
+    "capital": [
+      "Pyongyang"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 26418204,
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "currencies": [
+      {
+        "code": "KPW",
+        "name": "North Korean won",
+        "symbol": "₩"
+      }
+    ]
+  },
+  {
+    "code": "MKD",
+    "alpha2": "MK",
+    "name": "North Macedonia",
+    "officialName": "Republic of North Macedonia",
+    "nativeName": "Македонија",
+    "flag": "🇲🇰",
+    "capital": [
+      "Skopje"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 1827816,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "MKD",
+        "name": "denar",
+        "symbol": "den"
+      }
+    ]
+  },
+  {
+    "code": "MNP",
+    "alpha2": "MP",
+    "name": "Northern Mariana Islands",
+    "officialName": "Commonwealth of the Northern Mariana Islands",
+    "nativeName": "Northern Mariana Islands",
+    "flag": "🇲🇵",
+    "capital": [
+      "Saipan"
+    ],
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "population": 45143,
+    "timezones": [
+      "UTC+10:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "NOR",
+    "alpha2": "NO",
+    "name": "Norway",
+    "officialName": "Kingdom of Norway",
+    "nativeName": "Noreg",
+    "flag": "🇳🇴",
+    "capital": [
+      "Oslo"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 5519601,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "NOK",
+        "name": "Norwegian krone",
+        "symbol": "kr"
+      }
+    ]
+  },
+  {
+    "code": "OMN",
+    "alpha2": "OM",
+    "name": "Oman",
+    "officialName": "Sultanate of Oman",
+    "nativeName": "عمان",
+    "flag": "🇴🇲",
+    "capital": [
+      "Muscat"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 5049269,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "OMR",
+        "name": "Omani rial",
+        "symbol": "ر.ع."
+      }
+    ]
+  },
+  {
+    "code": "PAK",
+    "alpha2": "PK",
+    "name": "Pakistan",
+    "officialName": "Islamic Republic of Pakistan",
+    "nativeName": "Pakistan",
+    "flag": "🇵🇰",
+    "capital": [
+      "Islamabad"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 247504495,
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "currencies": [
+      {
+        "code": "PKR",
+        "name": "Pakistani rupee",
+        "symbol": "₨"
+      }
+    ]
+  },
+  {
+    "code": "PLW",
+    "alpha2": "PW",
+    "name": "Palau",
+    "officialName": "Republic of Palau",
+    "nativeName": "Palau",
+    "flag": "🇵🇼",
+    "capital": [
+      "Ngerulmud"
+    ],
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "population": 17727,
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "PSE",
+    "alpha2": "PS",
+    "name": "Palestine",
+    "officialName": "State of Palestine",
+    "nativeName": "فلسطين",
+    "flag": "🇵🇸",
+    "capital": [
+      "Ramallah"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 5165775,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "EGP",
+        "name": "Egyptian pound",
+        "symbol": "E£"
+      },
+      {
+        "code": "ILS",
+        "name": "Israeli new shekel",
+        "symbol": "₪"
+      },
+      {
+        "code": "JOD",
+        "name": "Jordanian dinar",
+        "symbol": "JD"
+      }
+    ]
+  },
+  {
+    "code": "PAN",
+    "alpha2": "PA",
+    "name": "Panama",
+    "officialName": "Republic of Panama",
+    "nativeName": "Panamá",
+    "flag": "🇵🇦",
+    "capital": [
+      "Panama City"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 4458759,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "PAB",
+        "name": "Panamanian balboa",
+        "symbol": "B/."
+      },
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "PNG",
+    "alpha2": "PG",
+    "name": "Papua New Guinea",
+    "officialName": "Independent State of Papua New Guinea",
+    "nativeName": "Papua New Guinea",
+    "flag": "🇵🇬",
+    "capital": [
+      "Port Moresby"
+    ],
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "population": 10389635,
+    "timezones": [
+      "UTC+10:00",
+      "UTC+11:00"
+    ],
+    "currencies": [
+      {
+        "code": "PGK",
+        "name": "Papua New Guinean kina",
+        "symbol": "K"
+      }
+    ]
+  },
+  {
+    "code": "PRY",
+    "alpha2": "PY",
+    "name": "Paraguay",
+    "officialName": "Republic of Paraguay",
+    "nativeName": "Paraguái",
+    "flag": "🇵🇾",
+    "capital": [
+      "Asunción"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 6844146,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "PYG",
+        "name": "Paraguayan guaraní",
+        "symbol": "₲"
+      }
+    ]
+  },
+  {
+    "code": "PER",
+    "alpha2": "PE",
+    "name": "Peru",
+    "officialName": "Republic of Peru",
+    "nativeName": "Piruw",
+    "flag": "🇵🇪",
+    "capital": [
+      "Lima"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 33845617,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "PEN",
+        "name": "Peruvian sol",
+        "symbol": "S/."
+      }
+    ]
+  },
+  {
+    "code": "PHL",
+    "alpha2": "PH",
+    "name": "Philippines",
+    "officialName": "Republic of the Philippines",
+    "nativeName": "Philippines",
+    "flag": "🇵🇭",
+    "capital": [
+      "Manila"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 114891199,
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "PHP",
+        "name": "Philippine peso",
+        "symbol": "₱"
+      }
+    ]
+  },
+  {
+    "code": "PCN",
+    "alpha2": "PN",
+    "name": "Pitcairn Islands",
+    "officialName": "Pitcairn Group of Islands",
+    "nativeName": "Pitcairn Islands",
+    "flag": "🇵🇳",
+    "capital": [
+      "Adamstown"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": null,
+    "timezones": [
+      "UTC-08:00"
+    ],
+    "currencies": [
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "POL",
+    "alpha2": "PL",
+    "name": "Poland",
+    "officialName": "Republic of Poland",
+    "nativeName": "Polska",
+    "flag": "🇵🇱",
+    "capital": [
+      "Warsaw"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 36687353,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "PLN",
+        "name": "Polish złoty",
+        "symbol": "zł"
+      }
+    ]
+  },
+  {
+    "code": "PRT",
+    "alpha2": "PT",
+    "name": "Portugal",
+    "officialName": "Portuguese Republic",
+    "nativeName": "Portugal",
+    "flag": "🇵🇹",
+    "capital": [
+      "Lisbon"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 10578174,
+    "timezones": [
+      "UTC-01:00",
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "PRI",
+    "alpha2": "PR",
+    "name": "Puerto Rico",
+    "officialName": "Commonwealth of Puerto Rico",
+    "nativeName": "Puerto Rico",
+    "flag": "🇵🇷",
+    "capital": [
+      "San Juan"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 3203794,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "QAT",
+    "alpha2": "QA",
+    "name": "Qatar",
+    "officialName": "State of Qatar",
+    "nativeName": "قطر",
+    "flag": "🇶🇦",
+    "capital": [
+      "Doha"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 2656032,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "QAR",
+        "name": "Qatari riyal",
+        "symbol": "ر.ق"
+      }
+    ]
+  },
+  {
+    "code": "COG",
+    "alpha2": "CG",
+    "name": "Republic of the Congo",
+    "officialName": "Republic of the Congo",
+    "nativeName": "République du Congo",
+    "flag": "🇨🇬",
+    "capital": [
+      "Brazzaville"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 6182885,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "XAF",
+        "name": "Central African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "REU",
+    "alpha2": "RE",
+    "name": "Réunion",
+    "officialName": "Réunion Island",
+    "nativeName": "La Réunion",
+    "flag": "🇷🇪",
+    "capital": [
+      "Saint-Denis"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": null,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "ROU",
+    "alpha2": "RO",
+    "name": "Romania",
+    "officialName": "Romania",
+    "nativeName": "România",
+    "flag": "🇷🇴",
+    "capital": [
+      "Bucharest"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 19061062,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "RON",
+        "name": "Romanian leu",
+        "symbol": "lei"
+      }
+    ]
+  },
+  {
+    "code": "RUS",
+    "alpha2": "RU",
+    "name": "Russia",
+    "officialName": "Russian Federation",
+    "nativeName": "Россия",
+    "flag": "🇷🇺",
+    "capital": [
+      "Moscow"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 143826130,
+    "timezones": [
+      "UTC+02:00",
+      "UTC+03:00",
+      "UTC+04:00",
+      "UTC+05:00",
+      "UTC+06:00",
+      "UTC+07:00",
+      "UTC+08:00",
+      "UTC+09:00",
+      "UTC+10:00",
+      "UTC+11:00",
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "RUB",
+        "name": "Russian ruble",
+        "symbol": "₽"
+      }
+    ]
+  },
+  {
+    "code": "RWA",
+    "alpha2": "RW",
+    "name": "Rwanda",
+    "officialName": "Republic of Rwanda",
+    "nativeName": "Rwanda",
+    "flag": "🇷🇼",
+    "capital": [
+      "Kigali"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 13954471,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "RWF",
+        "name": "Rwandan franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "BLM",
+    "alpha2": "BL",
+    "name": "Saint Barthélemy",
+    "officialName": "Collectivity of Saint Barthélemy",
+    "nativeName": "Saint-Barthélemy",
+    "flag": "🇧🇱",
+    "capital": [
+      "Gustavia"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": null,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "SHN",
+    "alpha2": "SH",
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "officialName": "Saint Helena, Ascension and Tristan da Cunha",
+    "nativeName": "Saint Helena, Ascension and Tristan da Cunha",
+    "flag": "🇸🇭",
+    "capital": [
+      "Jamestown"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": null,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GBP",
+        "name": "Pound sterling",
+        "symbol": "£"
+      },
+      {
+        "code": "SHP",
+        "name": "Saint Helena pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "KNA",
+    "alpha2": "KN",
+    "name": "Saint Kitts and Nevis",
+    "officialName": "Federation of Saint Christopher and Nevis",
+    "nativeName": "Saint Kitts and Nevis",
+    "flag": "🇰🇳",
+    "capital": [
+      "Basseterre"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 46758,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "LCA",
+    "alpha2": "LC",
+    "name": "Saint Lucia",
+    "officialName": "Saint Lucia",
+    "nativeName": "Saint Lucia",
+    "flag": "🇱🇨",
+    "capital": [
+      "Castries"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 179285,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "MAF",
+    "alpha2": "MF",
+    "name": "Saint Martin",
+    "officialName": "Saint Martin",
+    "nativeName": "Saint-Martin",
+    "flag": "🇲🇫",
+    "capital": [
+      "Marigot"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 27515,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "SPM",
+    "alpha2": "PM",
+    "name": "Saint Pierre and Miquelon",
+    "officialName": "Saint Pierre and Miquelon",
+    "nativeName": "Saint-Pierre-et-Miquelon",
+    "flag": "🇵🇲",
+    "capital": [
+      "Saint-Pierre"
+    ],
+    "region": "Americas",
+    "subregion": "North America",
+    "population": null,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "VCT",
+    "alpha2": "VC",
+    "name": "Saint Vincent and the Grenadines",
+    "officialName": "Saint Vincent and the Grenadines",
+    "nativeName": "Saint Vincent and the Grenadines",
+    "flag": "🇻🇨",
+    "capital": [
+      "Kingstown"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 101323,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "XCD",
+        "name": "Eastern Caribbean dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "WSM",
+    "alpha2": "WS",
+    "name": "Samoa",
+    "officialName": "Independent State of Samoa",
+    "nativeName": "Samoa",
+    "flag": "🇼🇸",
+    "capital": [
+      "Apia"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 216663,
+    "timezones": [
+      "UTC+13:00"
+    ],
+    "currencies": [
+      {
+        "code": "WST",
+        "name": "Samoan tālā",
+        "symbol": "T"
+      }
+    ]
+  },
+  {
+    "code": "SMR",
+    "alpha2": "SM",
+    "name": "San Marino",
+    "officialName": "Most Serene Republic of San Marino",
+    "nativeName": "San Marino",
+    "flag": "🇸🇲",
+    "capital": [
+      "City of San Marino"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 33860,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "STP",
+    "alpha2": "ST",
+    "name": "São Tomé and Príncipe",
+    "officialName": "Democratic Republic of São Tomé and Príncipe",
+    "nativeName": "São Tomé e Príncipe",
+    "flag": "🇸🇹",
+    "capital": [
+      "São Tomé"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 230871,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "STN",
+        "name": "São Tomé and Príncipe dobra",
+        "symbol": "Db"
+      }
+    ]
+  },
+  {
+    "code": "SAU",
+    "alpha2": "SA",
+    "name": "Saudi Arabia",
+    "officialName": "Kingdom of Saudi Arabia",
+    "nativeName": "العربية السعودية",
+    "flag": "🇸🇦",
+    "capital": [
+      "Riyadh"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 33702731,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "SAR",
+        "name": "Saudi riyal",
+        "symbol": "ر.س"
+      }
+    ]
+  },
+  {
+    "code": "SEN",
+    "alpha2": "SN",
+    "name": "Senegal",
+    "officialName": "Republic of Senegal",
+    "nativeName": "Sénégal",
+    "flag": "🇸🇳",
+    "capital": [
+      "Dakar"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 18077573,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "SRB",
+    "alpha2": "RS",
+    "name": "Serbia",
+    "officialName": "Republic of Serbia",
+    "nativeName": "Србија",
+    "flag": "🇷🇸",
+    "capital": [
+      "Belgrade"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 6623183,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "RSD",
+        "name": "Serbian dinar",
+        "symbol": "дин."
+      }
+    ]
+  },
+  {
+    "code": "SYC",
+    "alpha2": "SC",
+    "name": "Seychelles",
+    "officialName": "Republic of Seychelles",
+    "nativeName": "Sesel",
+    "flag": "🇸🇨",
+    "capital": [
+      "Victoria"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 119773,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "SCR",
+        "name": "Seychellois rupee",
+        "symbol": "₨"
+      }
+    ]
+  },
+  {
+    "code": "SLE",
+    "alpha2": "SL",
+    "name": "Sierra Leone",
+    "officialName": "Republic of Sierra Leone",
+    "nativeName": "Sierra Leone",
+    "flag": "🇸🇱",
+    "capital": [
+      "Freetown"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 8460512,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "SLL",
+        "name": "Sierra Leonean leone",
+        "symbol": "Le"
+      }
+    ]
+  },
+  {
+    "code": "SGP",
+    "alpha2": "SG",
+    "name": "Singapore",
+    "officialName": "Republic of Singapore",
+    "nativeName": "新加坡",
+    "flag": "🇸🇬",
+    "capital": [
+      "Singapore"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 5917648,
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "SGD",
+        "name": "Singapore dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "SXM",
+    "alpha2": "SX",
+    "name": "Sint Maarten",
+    "officialName": "Sint Maarten",
+    "nativeName": "Sint Maarten",
+    "flag": "🇸🇽",
+    "capital": [
+      "Philipsburg"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 42749,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "ANG",
+        "name": "Netherlands Antillean guilder",
+        "symbol": "ƒ"
+      }
+    ]
+  },
+  {
+    "code": "SVK",
+    "alpha2": "SK",
+    "name": "Slovakia",
+    "officialName": "Slovak Republic",
+    "nativeName": "Slovensko",
+    "flag": "🇸🇰",
+    "capital": [
+      "Bratislava"
+    ],
+    "region": "Europe",
+    "subregion": "Central Europe",
+    "population": 5426740,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "SVN",
+    "alpha2": "SI",
+    "name": "Slovenia",
+    "officialName": "Republic of Slovenia",
+    "nativeName": "Slovenija",
+    "flag": "🇸🇮",
+    "capital": [
+      "Ljubljana"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 2120461,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "SLB",
+    "alpha2": "SB",
+    "name": "Solomon Islands",
+    "officialName": "Solomon Islands",
+    "nativeName": "Solomon Islands",
+    "flag": "🇸🇧",
+    "capital": [
+      "Honiara"
+    ],
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "population": 800005,
+    "timezones": [
+      "UTC+11:00"
+    ],
+    "currencies": [
+      {
+        "code": "SBD",
+        "name": "Solomon Islands dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "SOM",
+    "alpha2": "SO",
+    "name": "Somalia",
+    "officialName": "Federal Republic of Somalia",
+    "nativeName": "الصومال‎‎",
+    "flag": "🇸🇴",
+    "capital": [
+      "Mogadishu"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 18358615,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "SOS",
+        "name": "Somali shilling",
+        "symbol": "Sh"
+      }
+    ]
+  },
+  {
+    "code": "ZAF",
+    "alpha2": "ZA",
+    "name": "South Africa",
+    "officialName": "Republic of South Africa",
+    "nativeName": "South Africa",
+    "flag": "🇿🇦",
+    "capital": [
+      "Pretoria",
+      "Bloemfontein",
+      "Cape Town"
+    ],
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "population": 63212384,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "ZAR",
+        "name": "South African rand",
+        "symbol": "R"
+      }
+    ]
+  },
+  {
+    "code": "SGS",
+    "alpha2": "GS",
+    "name": "South Georgia",
+    "officialName": "South Georgia and the South Sandwich Islands",
+    "nativeName": "South Georgia",
+    "flag": "🇬🇸",
+    "capital": [
+      "King Edward Point"
+    ],
+    "region": "Antarctic",
+    "subregion": null,
+    "population": null,
+    "timezones": [
+      "UTC-02:00"
+    ],
+    "currencies": [
+      {
+        "code": "SHP",
+        "name": "Saint Helena pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "KOR",
+    "alpha2": "KR",
+    "name": "South Korea",
+    "officialName": "Republic of Korea",
+    "nativeName": "한국",
+    "flag": "🇰🇷",
+    "capital": [
+      "Seoul"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": 51712619,
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "currencies": [
+      {
+        "code": "KRW",
+        "name": "South Korean won",
+        "symbol": "₩"
+      }
+    ]
+  },
+  {
+    "code": "SSD",
+    "alpha2": "SS",
+    "name": "South Sudan",
+    "officialName": "Republic of South Sudan",
+    "nativeName": "South Sudan",
+    "flag": "🇸🇸",
+    "capital": [
+      "Juba"
+    ],
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "population": 11483374,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "SSP",
+        "name": "South Sudanese pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "ESP",
+    "alpha2": "ES",
+    "name": "Spain",
+    "officialName": "Kingdom of Spain",
+    "nativeName": "España",
+    "flag": "🇪🇸",
+    "capital": [
+      "Madrid"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": 48352528,
+    "timezones": [
+      "UTC+00:00",
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "LKA",
+    "alpha2": "LK",
+    "name": "Sri Lanka",
+    "officialName": "Democratic Socialist Republic of Sri Lanka",
+    "nativeName": "ශ්‍රී ලංකාව",
+    "flag": "🇱🇰",
+    "capital": [
+      "Colombo"
+    ],
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "population": 22037000,
+    "timezones": [
+      "UTC+05:30"
+    ],
+    "currencies": [
+      {
+        "code": "LKR",
+        "name": "Sri Lankan rupee",
+        "symbol": "Rs  රු"
+      }
+    ]
+  },
+  {
+    "code": "SDN",
+    "alpha2": "SD",
+    "name": "Sudan",
+    "officialName": "Republic of the Sudan",
+    "nativeName": "السودان",
+    "flag": "🇸🇩",
+    "capital": [
+      "Khartoum"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 50042791,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "SDG",
+        "name": "Sudanese pound",
+        "symbol": ""
+      }
+    ]
+  },
+  {
+    "code": "SUR",
+    "alpha2": "SR",
+    "name": "Suriname",
+    "officialName": "Republic of Suriname",
+    "nativeName": "Suriname",
+    "flag": "🇸🇷",
+    "capital": [
+      "Paramaribo"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 628886,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "SRD",
+        "name": "Surinamese dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "SJM",
+    "alpha2": "SJ",
+    "name": "Svalbard and Jan Mayen",
+    "officialName": "Svalbard og Jan Mayen",
+    "nativeName": "Svalbard og Jan Mayen",
+    "flag": "🇸🇯",
+    "capital": [
+      "Longyearbyen"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": null,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "NOK",
+        "name": "krone",
+        "symbol": "kr"
+      }
+    ]
+  },
+  {
+    "code": "SWE",
+    "alpha2": "SE",
+    "name": "Sweden",
+    "officialName": "Kingdom of Sweden",
+    "nativeName": "Sverige",
+    "flag": "🇸🇪",
+    "capital": [
+      "Stockholm"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 10536632,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "SEK",
+        "name": "Swedish krona",
+        "symbol": "kr"
+      }
+    ]
+  },
+  {
+    "code": "CHE",
+    "alpha2": "CH",
+    "name": "Switzerland",
+    "officialName": "Swiss Confederation",
+    "nativeName": "Suisse",
+    "flag": "🇨🇭",
+    "capital": [
+      "Bern"
+    ],
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "population": 8888822,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "CHF",
+        "name": "Swiss franc",
+        "symbol": "Fr."
+      }
+    ]
+  },
+  {
+    "code": "SYR",
+    "alpha2": "SY",
+    "name": "Syria",
+    "officialName": "Syrian Arab Republic",
+    "nativeName": "سوريا",
+    "flag": "🇸🇾",
+    "capital": [
+      "Damascus"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 23594623,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "SYP",
+        "name": "Syrian pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "TWN",
+    "alpha2": "TW",
+    "name": "Taiwan",
+    "officialName": "Republic of China (Taiwan)",
+    "nativeName": "台灣",
+    "flag": "🇹🇼",
+    "capital": [
+      "Taipei"
+    ],
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "population": null,
+    "timezones": [
+      "UTC+08:00"
+    ],
+    "currencies": [
+      {
+        "code": "TWD",
+        "name": "New Taiwan dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "TJK",
+    "alpha2": "TJ",
+    "name": "Tajikistan",
+    "officialName": "Republic of Tajikistan",
+    "nativeName": "Таджикистан",
+    "flag": "🇹🇯",
+    "capital": [
+      "Dushanbe"
+    ],
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 10389799,
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "currencies": [
+      {
+        "code": "TJS",
+        "name": "Tajikistani somoni",
+        "symbol": "ЅМ"
+      }
+    ]
+  },
+  {
+    "code": "TZA",
+    "alpha2": "TZ",
+    "name": "Tanzania",
+    "officialName": "United Republic of Tanzania",
+    "nativeName": "Tanzania",
+    "flag": "🇹🇿",
+    "capital": [
+      "Dodoma"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 66617606,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "TZS",
+        "name": "Tanzanian shilling",
+        "symbol": "Sh"
+      }
+    ]
+  },
+  {
+    "code": "THA",
+    "alpha2": "TH",
+    "name": "Thailand",
+    "officialName": "Kingdom of Thailand",
+    "nativeName": "ประเทศไทย",
+    "flag": "🇹🇭",
+    "capital": [
+      "Bangkok"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 71702435,
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "currencies": [
+      {
+        "code": "THB",
+        "name": "Thai baht",
+        "symbol": "฿"
+      }
+    ]
+  },
+  {
+    "code": "TLS",
+    "alpha2": "TL",
+    "name": "Timor-Leste",
+    "officialName": "Democratic Republic of Timor-Leste",
+    "nativeName": "Timor-Leste",
+    "flag": "🇹🇱",
+    "capital": [
+      "Dili"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 1384286,
+    "timezones": [
+      "UTC+09:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "TGO",
+    "alpha2": "TG",
+    "name": "Togo",
+    "officialName": "Togolese Republic",
+    "nativeName": "Togo",
+    "flag": "🇹🇬",
+    "capital": [
+      "Lomé"
+    ],
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "population": 8223850,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "XOF",
+        "name": "West African CFA franc",
+        "symbol": "Fr"
+      }
+    ]
+  },
+  {
+    "code": "TKL",
+    "alpha2": "TK",
+    "name": "Tokelau",
+    "officialName": "Tokelau",
+    "nativeName": "Tokelau",
+    "flag": "🇹🇰",
+    "capital": [
+      "Fakaofo"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": null,
+    "timezones": [
+      "UTC+13:00"
+    ],
+    "currencies": [
+      {
+        "code": "NZD",
+        "name": "New Zealand dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "TON",
+    "alpha2": "TO",
+    "name": "Tonga",
+    "officialName": "Kingdom of Tonga",
+    "nativeName": "Tonga",
+    "flag": "🇹🇴",
+    "capital": [
+      "Nuku'alofa"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 104597,
+    "timezones": [
+      "UTC+13:00"
+    ],
+    "currencies": [
+      {
+        "code": "TOP",
+        "name": "Tongan paʻanga",
+        "symbol": "T$"
+      }
+    ]
+  },
+  {
+    "code": "TTO",
+    "alpha2": "TT",
+    "name": "Trinidad and Tobago",
+    "officialName": "Republic of Trinidad and Tobago",
+    "nativeName": "Trinidad and Tobago",
+    "flag": "🇹🇹",
+    "capital": [
+      "Port of Spain"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 1367510,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "TTD",
+        "name": "Trinidad and Tobago dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "TUN",
+    "alpha2": "TN",
+    "name": "Tunisia",
+    "officialName": "Tunisian Republic",
+    "nativeName": "تونس",
+    "flag": "🇹🇳",
+    "capital": [
+      "Tunis"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": 12200431,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "TND",
+        "name": "Tunisian dinar",
+        "symbol": "د.ت"
+      }
+    ]
+  },
+  {
+    "code": "TUR",
+    "alpha2": "TR",
+    "name": "Turkey",
+    "officialName": "Republic of Turkey",
+    "nativeName": "Türkiye",
+    "flag": "🇹🇷",
+    "capital": [
+      "Ankara"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 85325965,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "TRY",
+        "name": "Turkish lira",
+        "symbol": "₺"
+      }
+    ]
+  },
+  {
+    "code": "TKM",
+    "alpha2": "TM",
+    "name": "Turkmenistan",
+    "officialName": "Turkmenistan",
+    "nativeName": "Туркмения",
+    "flag": "🇹🇲",
+    "capital": [
+      "Ashgabat"
+    ],
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 7364438,
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "currencies": [
+      {
+        "code": "TMT",
+        "name": "Turkmenistan manat",
+        "symbol": "m"
+      }
+    ]
+  },
+  {
+    "code": "TCA",
+    "alpha2": "TC",
+    "name": "Turks and Caicos Islands",
+    "officialName": "Turks and Caicos Islands",
+    "nativeName": "Turks and Caicos Islands",
+    "flag": "🇹🇨",
+    "capital": [
+      "Cockburn Town"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 46198,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "TUV",
+    "alpha2": "TV",
+    "name": "Tuvalu",
+    "officialName": "Tuvalu",
+    "nativeName": "Tuvalu",
+    "flag": "🇹🇻",
+    "capital": [
+      "Funafuti"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": 9816,
+    "timezones": [
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "AUD",
+        "name": "Australian dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "TVD",
+        "name": "Tuvaluan dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "UGA",
+    "alpha2": "UG",
+    "name": "Uganda",
+    "officialName": "Republic of Uganda",
+    "nativeName": "Uganda",
+    "flag": "🇺🇬",
+    "capital": [
+      "Kampala"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 48656601,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "UGX",
+        "name": "Ugandan shilling",
+        "symbol": "Sh"
+      }
+    ]
+  },
+  {
+    "code": "UKR",
+    "alpha2": "UA",
+    "name": "Ukraine",
+    "officialName": "Ukraine",
+    "nativeName": "Україна",
+    "flag": "🇺🇦",
+    "capital": [
+      "Kyiv"
+    ],
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "population": 37732836,
+    "timezones": [
+      "UTC+02:00",
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "UAH",
+        "name": "Ukrainian hryvnia",
+        "symbol": "₴"
+      }
+    ]
+  },
+  {
+    "code": "ARE",
+    "alpha2": "AE",
+    "name": "United Arab Emirates",
+    "officialName": "United Arab Emirates",
+    "nativeName": "دولة الإمارات العربية المتحدة",
+    "flag": "🇦🇪",
+    "capital": [
+      "Abu Dhabi"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 10483751,
+    "timezones": [
+      "UTC+04:00"
+    ],
+    "currencies": [
+      {
+        "code": "AED",
+        "name": "United Arab Emirates dirham",
+        "symbol": "د.إ"
+      }
+    ]
+  },
+  {
+    "code": "GBR",
+    "alpha2": "GB",
+    "name": "United Kingdom",
+    "officialName": "United Kingdom of Great Britain and Northern Ireland",
+    "nativeName": "United Kingdom",
+    "flag": "🇬🇧",
+    "capital": [
+      "London"
+    ],
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "population": 68526000,
+    "timezones": [
+      "UTC+00:00"
+    ],
+    "currencies": [
+      {
+        "code": "GBP",
+        "name": "British pound",
+        "symbol": "£"
+      }
+    ]
+  },
+  {
+    "code": "USA",
+    "alpha2": "US",
+    "name": "United States",
+    "officialName": "United States of America",
+    "nativeName": "United States",
+    "flag": "🇺🇸",
+    "capital": [
+      "Washington D.C."
+    ],
+    "region": "Americas",
+    "subregion": "North America",
+    "population": 336755052,
+    "timezones": [
+      "UTC-10:00",
+      "UTC-09:00",
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00",
+      "UTC-05:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "UMI",
+    "alpha2": "UM",
+    "name": "United States Minor Outlying Islands",
+    "officialName": "United States Minor Outlying Islands",
+    "nativeName": "United States Minor Outlying Islands",
+    "flag": "🇺🇲",
+    "capital": [
+      ""
+    ],
+    "region": "Americas",
+    "subregion": "North America",
+    "population": null,
+    "timezones": [
+      "UTC-11:00",
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "VIR",
+    "alpha2": "VI",
+    "name": "United States Virgin Islands",
+    "officialName": "Virgin Islands of the United States",
+    "nativeName": "United States Virgin Islands",
+    "flag": "🇻🇮",
+    "capital": [
+      "Charlotte Amalie"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 104917,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "URY",
+    "alpha2": "UY",
+    "name": "Uruguay",
+    "officialName": "Oriental Republic of Uruguay",
+    "nativeName": "Uruguay",
+    "flag": "🇺🇾",
+    "capital": [
+      "Montevideo"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 3388081,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "currencies": [
+      {
+        "code": "UYU",
+        "name": "Uruguayan peso",
+        "symbol": "$"
+      }
+    ]
+  },
+  {
+    "code": "UZB",
+    "alpha2": "UZ",
+    "name": "Uzbekistan",
+    "officialName": "Republic of Uzbekistan",
+    "nativeName": "Узбекистан",
+    "flag": "🇺🇿",
+    "capital": [
+      "Tashkent"
+    ],
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "population": 35652307,
+    "timezones": [
+      "UTC+05:00"
+    ],
+    "currencies": [
+      {
+        "code": "UZS",
+        "name": "Uzbekistani soʻm",
+        "symbol": "so'm"
+      }
+    ]
+  },
+  {
+    "code": "VUT",
+    "alpha2": "VU",
+    "name": "Vanuatu",
+    "officialName": "Republic of Vanuatu",
+    "nativeName": "Vanuatu",
+    "flag": "🇻🇺",
+    "capital": [
+      "Port Vila"
+    ],
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "population": 320409,
+    "timezones": [
+      "UTC+11:00"
+    ],
+    "currencies": [
+      {
+        "code": "VUV",
+        "name": "Vanuatu vatu",
+        "symbol": "Vt"
+      }
+    ]
+  },
+  {
+    "code": "VAT",
+    "alpha2": "VA",
+    "name": "Vatican City",
+    "officialName": "Vatican City State",
+    "nativeName": "Vaticano",
+    "flag": "🇻🇦",
+    "capital": [
+      "Vatican City"
+    ],
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "population": null,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      }
+    ]
+  },
+  {
+    "code": "VEN",
+    "alpha2": "VE",
+    "name": "Venezuela",
+    "officialName": "Bolivarian Republic of Venezuela",
+    "nativeName": "Venezuela",
+    "flag": "🇻🇪",
+    "capital": [
+      "Caracas"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 28300854,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "currencies": [
+      {
+        "code": "VES",
+        "name": "Venezuelan bolívar soberano",
+        "symbol": "Bs.S."
+      }
+    ]
+  },
+  {
+    "code": "VNM",
+    "alpha2": "VN",
+    "name": "Vietnam",
+    "officialName": "Socialist Republic of Vietnam",
+    "nativeName": "Việt Nam",
+    "flag": "🇻🇳",
+    "capital": [
+      "Hanoi"
+    ],
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "population": 100352192,
+    "timezones": [
+      "UTC+07:00"
+    ],
+    "currencies": [
+      {
+        "code": "VND",
+        "name": "Vietnamese đồng",
+        "symbol": "₫"
+      }
+    ]
+  },
+  {
+    "code": "WLF",
+    "alpha2": "WF",
+    "name": "Wallis and Futuna",
+    "officialName": "Territory of the Wallis and Futuna Islands",
+    "nativeName": "Wallis et Futuna",
+    "flag": "🇼🇫",
+    "capital": [
+      "Mata-Utu"
+    ],
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "population": null,
+    "timezones": [
+      "UTC+12:00"
+    ],
+    "currencies": [
+      {
+        "code": "XPF",
+        "name": "CFP franc",
+        "symbol": "₣"
+      }
+    ]
+  },
+  {
+    "code": "ESH",
+    "alpha2": "EH",
+    "name": "Western Sahara",
+    "officialName": "Sahrawi Arab Democratic Republic",
+    "nativeName": "Western Sahara",
+    "flag": "🇪🇭",
+    "capital": [
+      "El Aaiún"
+    ],
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "population": null,
+    "timezones": [
+      "UTC+01:00"
+    ],
+    "currencies": [
+      {
+        "code": "DZD",
+        "name": "Algerian dinar",
+        "symbol": "دج"
+      },
+      {
+        "code": "MAD",
+        "name": "Moroccan dirham",
+        "symbol": "DH"
+      },
+      {
+        "code": "MRU",
+        "name": "Mauritanian ouguiya",
+        "symbol": "UM"
+      }
+    ]
+  },
+  {
+    "code": "YEM",
+    "alpha2": "YE",
+    "name": "Yemen",
+    "officialName": "Republic of Yemen",
+    "nativeName": "اليَمَن",
+    "flag": "🇾🇪",
+    "capital": [
+      "Sana'a"
+    ],
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "population": 39390799,
+    "timezones": [
+      "UTC+03:00"
+    ],
+    "currencies": [
+      {
+        "code": "YER",
+        "name": "Yemeni rial",
+        "symbol": "﷼"
+      }
+    ]
+  },
+  {
+    "code": "ZMB",
+    "alpha2": "ZM",
+    "name": "Zambia",
+    "officialName": "Republic of Zambia",
+    "nativeName": "Zambia",
+    "flag": "🇿🇲",
+    "capital": [
+      "Lusaka"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 20723965,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "ZMW",
+        "name": "Zambian kwacha",
+        "symbol": "ZK"
+      }
+    ]
+  },
+  {
+    "code": "ZWE",
+    "alpha2": "ZW",
+    "name": "Zimbabwe",
+    "officialName": "Republic of Zimbabwe",
+    "nativeName": "Zimbabwe",
+    "flag": "🇿🇼",
+    "capital": [
+      "Harare"
+    ],
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "population": 16340822,
+    "timezones": [
+      "UTC+02:00"
+    ],
+    "currencies": [
+      {
+        "code": "BWP",
+        "name": "Botswana pula",
+        "symbol": "P"
+      },
+      {
+        "code": "CNY",
+        "name": "Chinese yuan",
+        "symbol": "¥"
+      },
+      {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€"
+      },
+      {
+        "code": "GBP",
+        "name": "British pound",
+        "symbol": "£"
+      },
+      {
+        "code": "INR",
+        "name": "Indian rupee",
+        "symbol": "₹"
+      },
+      {
+        "code": "JPY",
+        "name": "Japanese yen",
+        "symbol": "¥"
+      },
+      {
+        "code": "USD",
+        "name": "United States dollar",
+        "symbol": "$"
+      },
+      {
+        "code": "ZAR",
+        "name": "South African rand",
+        "symbol": "Rs"
+      },
+      {
+        "code": "ZWB",
+        "name": "Zimbabwean bonds",
+        "symbol": "$"
+      }
+    ]
+  }
+]

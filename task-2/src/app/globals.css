@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* The widget is designed as a light surface on a pale blue page, matching the
+   reference screenshots, so the palette is fixed rather than theme-aware. */
+@theme inline {
+  --color-ink: #10233f;
+  --color-ink-soft: #4a5b74;
+  --color-muted: #7c8ba1;
+  --color-eyebrow: #7fa8d4;
+  --color-card: #fbfcfe;
+  --color-line: #e6ecf4;
+  --color-accent: #3b8ef0;
+  --color-dot: #34d399;
+  --color-field: #f1f4f8;
+
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-source-serif);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(120% 90% at 50% 0%, #dfebfa 0%, rgba(223, 235, 250, 0) 60%),
+    linear-gradient(180deg, #e9f1fb 0%, #f4f8fd 100%);
+  background-attachment: fixed;
+  color: var(--color-ink);
+}
+
+/* The dropdown list keeps a visible scrollbar, as in the reference. */
+.scroll-slim {
+  scrollbar-width: thin;
+  scrollbar-color: #b9c4d4 transparent;
+}
+
+.scroll-slim::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-slim::-webkit-scrollbar-thumb {
+  background-color: #b9c4d4;
+  border-radius: 999px;
+}
