@@ -4,23 +4,39 @@ A custom WordPress theme implementing the "Loved. Adopted. Trusted." case-study 
 ACF Gutenberg block: client logo tabs, quote, solution and CRM badges, headline stats and a
 testimonial video. The tabs become a swipeable slider on mobile.
 
-## Requirements
+## Running it — import the LocalWP site
 
-- WordPress 6.0+
-- PHP 8.0+
-- **Advanced Custom Fields Pro** — the block is an ACF block, registered from `block.json`
+`task.zip` (41 MB) is a full [Local](https://localwp.com) export of the site: WordPress 7.0,
+ACF Pro, the theme, the database and all content. Importing it gives you the finished page with
+nothing left to configure.
 
-## Installing
+1. Download `task.zip` from this folder.
+2. Open Local → **File → Import Site** (or drag the zip onto the Local window).
+3. Start the site and open it. Admin is at `/wp-admin`, user `admin` — password supplied with
+   the submission message.
+
+The export was made with Local 9.2.8 (PHP 8.2, MySQL 8.0, nginx). Local rewrites the site domain
+on import, so the `task.local` URL in the export does not have to be free on your machine.
+
+## Reviewing the code without importing
+
+The theme source is also committed unzipped, in [`dealhub/`](dealhub), so it can be read and
+diffed on GitHub without downloading 41 MB. It is the same code that is inside the zip, at
+`app/public/wp-content/themes/dealhub/`.
+
+To use it against an existing WordPress install instead of the export:
 
 ```
 cp -R dealhub /path/to/wp-content/themes/
 ```
 
-Then activate **DealHub** in Appearance → Themes. Nothing else to do: there is no build step, and
-activating the theme seeds a homepage that already matches the design, so the section can be
-reviewed without first creating a page, uploading eleven images and filling in five repeater rows
-by hand. The import runs once, is guarded by an option, and never overwrites existing content —
-see `inc/demo-content.php`, which is safe to delete along with its `require` in `functions.php`.
+Then activate **DealHub** in Appearance → Themes. Requires WordPress 6.0+, PHP 8.0+ and
+**Advanced Custom Fields Pro** (the section is an ACF block). There is no build step. Activating
+the theme on a fresh install seeds a homepage that already matches the design, so the section can
+be reviewed without first creating a page, uploading eleven images and filling in five repeater
+rows by hand. The import runs once, is guarded by an option, and never overwrites existing
+content — see `inc/demo-content.php`, which is safe to delete along with its `require` in
+`functions.php`.
 
 ## Layout
 
@@ -46,11 +62,8 @@ Notes on a few decisions:
   tokens/reset and per-block stylesheets, so no page loads CSS for a block it does not render.
 - **No raw hex values in block CSS** — colours and spacing come from `tokens.css`.
 
-## Not included in this repo
+## Note on the export
 
-The task was delivered as a LocalWP export (5,487 files, 131 MB). Only the theme is here. Left out:
-
-- WordPress core
-- Advanced Custom Fields / ACF Pro — third-party commercial plugin code, not mine to redistribute
-- `app/sql/local.sql` — the site database dump, which carries user password hashes
-- `wp-config.php`, `local-site.json`, `conf/`, `logs/` — local environment config and credentials
+`task.zip` is the Local export as produced, so it also carries WordPress core, the ACF and ACF Pro
+plugins, `wp-config.php`, the LocalWP service config and the site database dump. It is included
+whole so the site can be imported in one step.
